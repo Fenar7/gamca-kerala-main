@@ -1,0 +1,75 @@
+.header-container .header-top {
+  padding-top: 1.4em !important;
+  padding-bottom: 1.4em !important;
+}
+.header-container .header-top .logo-container {
+  width: 14.375rem;
+  height: 3.375rem;
+}
+.header-container .header-top .contact-container {
+  gap: 1.5em;
+}
+.header-container .header-top .contact-container .contact-card {
+  gap: 0.69em;
+}
+.header-container .header-top .contact-container .contact-card .circle {
+  flex-shrink: 0;
+  border-radius: 2.3125rem;
+  background: #D9D9D9;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.header-container .header-top .contact-container .contact-card .circle .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header-container .header-top .contact-container .contact-card .info h6 {
+  color: #1166EA;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-container .header-top .contact-container .contact-card .info p {
+  margin-top: 0.31em;
+  color: #9498A6;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-container .header-bottom {
+  border-top: 1px solid #C5C5C5;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+.header-container .header-bottom .header-bottom-container ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  gap: 1.25em;
+}
+.header-container .header-bottom .header-bottom-container ul li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+.header-container .header-bottom .header-bottom-container ul li a {
+  color: #9498A6 !important;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+}
+.header-container .header-bottom .header-bottom-container ul li a.active {
+  color: #1166EA !important;
+}
+.header-container .header-bottom .header-bottom-container ul li a:hover {
+  color: #1166EA !important;
+}/*# sourceMappingURL=header.css.map */

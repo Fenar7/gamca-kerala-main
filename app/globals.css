@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFPRO";
+  src: url("../fonts/SF-Pro-Display-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: SFPRO;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a {
+  color: unset !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.col-6 {
+  padding: 0px !important;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+[class^=col-] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.container {
+  padding: 0px !important;
+}/*# sourceMappingURL=globals.css.map */

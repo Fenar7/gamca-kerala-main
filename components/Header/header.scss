@@ -1,0 +1,90 @@
+@import '../variables.scss';
+
+.header-container{
+    .header-top{
+        padding-top: 1.4em!important;
+        padding-bottom: 1.4em!important;
+        .logo-container{
+            width: 14.375rem;
+            height: 3.375rem;
+        }
+
+        .contact-container{
+            gap: 1.5em;
+            .contact-card{
+                gap: 0.69em;
+                .circle{
+                    .icon{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                    flex-shrink: 0;
+                    border-radius: 2.3125rem;
+                    background: $icon-grey;
+                    width: 2.7rem;
+                    height: 2.7rem;
+                }
+    
+                .info{
+                    h6{
+                        color: $blue-main;
+                        font-family: inherit;
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+    
+                    p{
+                        margin-top: 0.31em;
+                        color: $grey-text;
+                        font-family: inherit;
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom{
+        border-top: 1px solid #C5C5C5;
+        padding-top: 1em!important;
+        padding-bottom: 1em!important;
+        .header-bottom-container{
+           ul{
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            gap: 1.25em;
+            li{
+                list-style: none;
+                text-decoration: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline-block;
+
+                a{
+                    color: $grey-text!important;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    transition: all .3s ease-in-out;
+                }
+
+                a.active{
+                    color: $blue-main!important;
+                }
+
+                a:hover{
+                    color: $blue-main!important;
+                }
+            }
+           }
+        }
+    }
+}
