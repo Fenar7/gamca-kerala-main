@@ -4,8 +4,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+
+    .overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
 
     .hero-container{
+        z-index: 10;
+        gap: 1.1em;
         h1{
             color: #FFF;
             text-align: center;

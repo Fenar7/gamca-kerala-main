@@ -1,9 +1,9 @@
 import './button.css'
 
-function Button({text,color,link}) {
+function Button({text,link}) {
   return (
     <>
-      <button class="btnn">txt</button>
+      <button class="btnn">{text}</button>
     </>
   )
 }

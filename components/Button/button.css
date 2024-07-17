@@ -6,4 +6,17 @@
   gap: 0.625rem;
   border-radius: 0.4375rem;
   background: #1166EA;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnn:hover {
+  background: #fff;
+  color: #1166EA;
 }/*# sourceMappingURL=button.css.map */

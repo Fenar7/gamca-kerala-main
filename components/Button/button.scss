@@ -8,4 +8,20 @@
     gap: 0.625rem;
     border-radius: 0.4375rem;
     background: $blue-main;
+
+    border: none;
+
+    color: $white;
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    transition: all .3s ease-in-out;
+}
+
+.btnn:hover{
+    background: $white;
+    color: $blue-main;
 }
