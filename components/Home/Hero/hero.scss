@@ -1,0 +1,23 @@
+.hero-container-main{
+    height: 79vh;
+    background-image: url(/hero-image.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero-container{
+        h1{
+            color: #FFF;
+            text-align: center;
+            font-family: inherit;
+            font-size: 3.75rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p{
+            
+        }
+    }
+}

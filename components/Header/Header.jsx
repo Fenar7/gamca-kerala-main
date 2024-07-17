@@ -73,6 +73,26 @@ function Header({phone, email}) {
               <li>
                 <Link href="/">GCC Countries</Link>
               </li>
+
+              <li>
+                <Link href="/">Medical Centers</Link>
+              </li>
+
+              <li>
+                <Link href="/">WAFID</Link>
+              </li>
+
+              <li>
+                <Link href="/">FAQ</Link>
+              </li>
+
+              <li>
+                <Link href="/">Terms & Conditions</Link>
+              </li>
+
+              <li>
+                <Link href="/">Contact Us</Link>
+              </li>
             </ul>
         </div>
       </div>
