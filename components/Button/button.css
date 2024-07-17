@@ -1,0 +1,9 @@
+.btnn {
+  display: flex;
+  padding: 1rem 1.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.4375rem;
+  background: #1166EA;
+}/*# sourceMappingURL=button.css.map */
