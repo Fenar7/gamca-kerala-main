@@ -21,8 +21,8 @@ function GAMCACountries() {
 
             <div className="cardd">
                 <div className="image">
-                    <img src="/bahrain1.png" alt="" />
-                    <h4>Bahrain</h4>
+                    <img src="/kuwait1.png" alt="" />
+                    <h4>Kuwait</h4>
                 </div>
                 <div className="button-container d-flex align-items-center justify-content-center">
                     <button>Register Now</button>
@@ -31,8 +31,8 @@ function GAMCACountries() {
 
             <div className="cardd">
                 <div className="image">
-                    <img src="/bahrain1.png" alt="" />
-                    <h4>Bahrain</h4>
+                    <img src="/oman1.png" alt="" />
+                    <h4>Oman</h4>
                 </div>
                 <div className="button-container d-flex align-items-center justify-content-center">
                     <button>Register Now</button>
@@ -41,8 +41,8 @@ function GAMCACountries() {
 
             <div className="cardd">
                 <div className="image">
-                    <img src="/bahrain1.png" alt="" />
-                    <h4>Bahrain</h4>
+                    <img src="/qatar1.png" alt="" />
+                    <h4>Qatar</h4>
                 </div>
                 <div className="button-container d-flex align-items-center justify-content-center">
                     <button>Register Now</button>
@@ -51,8 +51,8 @@ function GAMCACountries() {
 
             <div className="cardd">
                 <div className="image">
-                    <img src="/bahrain1.png" alt="" />
-                    <h4>Bahrain</h4>
+                    <img src="/saudi1.png" alt="" />
+                    <h4>Saudi Arabia</h4>
                 </div>
                 <div className="button-container d-flex align-items-center justify-content-center">
                     <button>Register Now</button>
@@ -61,8 +61,18 @@ function GAMCACountries() {
 
             <div className="cardd">
                 <div className="image">
-                    <img src="/bahrain1.png" alt="" />
-                    <h4>Bahrain</h4>
+                    <img src="/dubai1.png" alt="" />
+                    <h4>UAE</h4>
+                </div>
+                <div className="button-container d-flex align-items-center justify-content-center">
+                    <button>Register Now</button>
+                </div>
+            </div>
+
+            <div className="cardd">
+                <div className="image">
+                    <img src="/yemen1.png" alt="" />
+                    <h4>Yemen</h4>
                 </div>
                 <div className="button-container d-flex align-items-center justify-content-center">
                     <button>Register Now</button>
