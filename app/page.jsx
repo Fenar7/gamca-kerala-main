@@ -5,6 +5,7 @@ import { useState } from "react";
 import Hero from "@/components/Home/Hero/Hero";
 import AboutSection from "@/components/Home/AboutSection/AboutSection";
 import MedicalCentres from "@/components/Home/MedicalCentres/MedicalCentres";
+import SmContact from "@/components/Home/SmContact/SmContact";
 
 export default function Home() {
   return (
@@ -25,6 +26,12 @@ export default function Home() {
      <MedicalCentres
       title="GCC Medical Centers"
       points={["Bahrain Medical Centre","Kuwait Medical Centre","Oman Medical Centre","Qatar Medical Centre","Saudi Medical Centre"]}
+     />
+
+     <SmContact
+      title="Do you need GAMCA Medical Appointment Service"
+      phone="8943319888"
+      email="fenar@gmail.com"
      />
 
 

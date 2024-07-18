@@ -1,5 +1,30 @@
+@import '../variables.scss';
+
 .sm-contact-container-main{
+    min-height: 60vh;
+    background-image: url('/bgimg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     .sm-contact-container{
-        
+        h3{
+            color: $white;
+            font-family: inherit;
+            font-size: 2.9375rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .item{
+            p{
+                color: $white;
+                font-family: inherit;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
     }
 }

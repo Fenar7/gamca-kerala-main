@@ -1,1 +1,23 @@
-/*# sourceMappingURL=smcontact.css.map */
+.sm-contact-container-main {
+  min-height: 60vh;
+  background-image: url("/bgimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sm-contact-container-main .sm-contact-container h3 {
+  color: #fff;
+  font-family: inherit;
+  font-size: 2.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sm-contact-container-main .sm-contact-container .item p {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}/*# sourceMappingURL=smcontact.css.map */
