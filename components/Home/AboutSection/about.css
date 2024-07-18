@@ -1,4 +1,32 @@
+.about-us-container-main {
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
+}
+.about-us-container-main .about-us-container .row .image-container {
+  padding-left: 2.5em;
+}
 .about-us-container-main .about-us-container .row .image-container .image {
   width: 27.5rem;
   height: 24.625rem;
+}
+.about-us-container-main .about-us-container .row .text-container {
+  gap: 1.25em;
+  padding-right: 2.5em;
+}
+.about-us-container-main .about-us-container .row .text-container h2 {
+  color: #1B2B50;
+  text-align: left;
+  font-family: "SF Pro Display";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.about-us-container-main .about-us-container .row .text-container p {
+  color: #909090;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 139.2%; /* 1.392rem */
 }/*# sourceMappingURL=about.css.map */

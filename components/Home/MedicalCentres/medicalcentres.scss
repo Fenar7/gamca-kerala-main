@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.medical-centres-container-main{
+    .medical-centres-container{
+        .row{
+            .image-container{
+                .image{
+                        width: 90%;
+                        height: 28rem;
+                        border-radius: 1rem;
+                        overflow: hidden;
+                }
+            }
+
+            .text-container{
+                h3{
+                    color: $dark-blue;
+                    font-family: inherit;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .list-container{
+                    margin-top: 2em;
+                    gap: 1.5em;
+                    .list{
+                        gap: 1.06em;
+                        p{
+                            color: $dark-grey-text;
+                            font-family: inherit;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
