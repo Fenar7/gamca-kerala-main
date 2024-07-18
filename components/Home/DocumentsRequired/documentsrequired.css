@@ -7,10 +7,36 @@
   font-weight: 800;
   line-height: normal;
 }
+.documents-required-container-main .documents-requried-container .item-card-container {
+  flex-wrap: wrap;
+  row-gap: 2em;
+  margin-top: 3em;
+}
 .documents-required-container-main .documents-requried-container .item-card-container .item {
-  width: 31%;
-  background-color: red;
-  height: 19.9em;
+  width: 21%;
+  min-width: 25.9em !important;
+  height: 19.5em;
   display: flex;
   padding: 1.6875rem;
+  border-radius: 0.9375rem;
+  background: #FFF;
+  box-shadow: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.45);
+  gap: 0.81em;
+}
+.documents-required-container-main .documents-requried-container .item-card-container .item h4 {
+  color: #1B2B50;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.6875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.documents-required-container-main .documents-requried-container .item-card-container .item p {
+  color: #555;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.6%; /* 1.356rem */
 }/*# sourceMappingURL=documentsrequired.css.map */
