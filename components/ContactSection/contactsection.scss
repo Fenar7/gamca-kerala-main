@@ -1,0 +1,180 @@
+@import '../variables.scss';
+
+.contact-us-section{
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(/images/contact-bg.jpeg), lightgray 50% / cover no-repeat;
+    background-position: center;
+    padding: 3.125em;
+
+    @media(max-width:768px){
+        height: unset;
+    }
+
+    @media(max-width:576px){
+        padding: 1em;
+        padding-bottom: .3em;
+    }
+
+    .contact-us{
+        height: 100%;
+    }
+
+    .text-content{
+        height: 100%;
+        position: relative;
+        @media(max-width:768px){
+            row-gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        @media(max-width:576px){
+            width: 100%;
+            padding: 0em 1em!important;
+        }
+        h5{
+            position: absolute;
+            color: $white;
+            font-family: inherit;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            top: 0px;
+            left: 0px;
+
+            @media(max-width:768px){
+                position: unset;
+            }
+
+            @media(max-width:576px){
+                font-size: 1.5rem;
+            }
+        }
+
+        h2{
+            color: $white;
+            font-family: inherit;
+            font-size: 2.5625rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            span{
+                color: $blue-main;
+            }
+
+            @media(max-width:576px){
+                font-size: 2rem;
+            }
+        }
+
+        p{
+            color: $white;
+            font-family: inherit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 0.5em;
+
+            @media(max-width:576px){
+                font-size: 0.8rem;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .contact-form{
+        border-radius: 20px;
+        background: linear-gradient(117deg, rgba(255, 255, 255, 0.75) 0.74%, rgba(255, 255, 255, 0.65) 100.93%);
+        backdrop-filter: blur(9.550000190734863px);
+        padding: 1.5625em!important;
+        @media(max-width:576px){
+            width: 100%;
+        }
+
+        h1{
+            color: #000;
+            font-family: inherit;
+            font-size: 1.875rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        form{
+            margin-top: 1em;
+            gap: 0.75em;
+            .row{
+                margin: 0px!important;
+                padding: 0px!important;
+            }
+            input{
+                margin: 0px!important;
+                padding: 0px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #000;
+                width: 48%;
+                margin-bottom: 1em;
+                transition: all .3s ease-out;
+            }
+            
+            input::placeholder{
+                color: #000;
+                font-family: inherit;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            input:focus{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $blue-main;
+            }
+            input[type="text"]{
+                padding-bottom: 0.65rem!important;
+            }
+            input[type="email"]{
+                padding-bottom: 0.65rem!important;
+                width: 100%;
+            }
+            textarea{
+                margin: 0px!important;
+                padding: 0px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #000;
+                margin-bottom: 1em;
+                padding-bottom: 0.65rem!important;
+                transition: all .3s ease-out;
+            }
+            textarea:focus{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $blue-main;
+            }
+            textarea::placeholder{
+                color: #000;
+                font-family: inherit;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            button{
+                background-color: #000;
+            }
+            
+            button::before{
+                background-color: $blue-main!important;
+            }
+        }
+    }
+}

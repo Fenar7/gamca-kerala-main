@@ -9,6 +9,7 @@ import SmContact from "@/components/Home/SmContact/SmContact";
 import DocumentsRequired from "@/components/Home/DocumentsRequired/DocumentsRequired";
 import GAMCACountries from "@/components/Home/GAMCACountries/GAMCACountries";
 import ClientReviews from "@/components/Home/ClientReviews/ClientReviews";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
      <GAMCACountries/>
 
      <ClientReviews/>
+
+     <ContactSection/>
    </div>
   );
 }
