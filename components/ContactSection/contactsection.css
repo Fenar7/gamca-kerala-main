@@ -51,6 +51,13 @@
 .contact-us-section .contact-us .text-content .contact-details .contact-item {
   gap: 0.5em;
 }
+.contact-us-section .contact-us .contact-form {
+  border-radius: 1.25rem;
+  padding: 2em !important;
+  background: linear-gradient(117deg, rgba(255, 255, 255, 0.75) 0.74%, rgba(255, 255, 255, 0.65) 100.93%);
+  -webkit-backdrop-filter: blur(9.5500001907px);
+          backdrop-filter: blur(9.5500001907px);
+}
 .contact-us-section .contact-us .contact-form form {
   margin-top: 1em;
   gap: 0.75em;
@@ -131,8 +138,23 @@
   line-height: normal;
 }
 .contact-us-section .contact-us .contact-form form button {
-  background-color: #000;
+  margin-top: 1.2em;
+  background-color: #1166EA;
+  border: none;
+  display: flex;
+  width: 7.625rem;
+  height: 2.625rem;
+  padding: 0.875rem 0.4375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #1166EA;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
-.contact-us-section .contact-us .contact-form form button::before {
-  background-color: #1166EA !important;
+.contact-us-section .contact-us .contact-form form button:hover {
+  color: #1166EA;
+  background-color: #fff;
 }/*# sourceMappingURL=contactsection.css.map */

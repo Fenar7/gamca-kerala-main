@@ -3,7 +3,7 @@ import './contactsection.css'
 function ContactSection() {
   return (
       <section className="contact-us-section container margin-bottom" id="contact">
-      <div className="row contact-us">
+      <div className="row contact-us d-flex align-items-center justify-content-center">
         <div className="col-12 col-md-6 text-content d-flex flex-column justify-content-center">
           <h4>Hey There</h4>
           <h5>
@@ -33,9 +33,6 @@ function ContactSection() {
             </div>
             <div className="row">
               <input type="email" placeholder="Email" />
-            </div>
-            <div className="row">
-              <input type="text" placeholder="Product/Service (optional)" />
             </div>
             <div className="row">
               <textarea placeholder="Message" rows="4"></textarea>
