@@ -10,6 +10,7 @@ import DocumentsRequired from "@/components/Home/DocumentsRequired/DocumentsRequ
 import GAMCACountries from "@/components/Home/GAMCACountries/GAMCACountries";
 import ClientReviews from "@/components/Home/ClientReviews/ClientReviews";
 import ContactSection from "@/components/ContactSection/ContactSection";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -45,6 +46,8 @@ export default function Home() {
      <ClientReviews/>
 
      <ContactSection/>
+
+     <Footer/>
    </div>
   );
 }

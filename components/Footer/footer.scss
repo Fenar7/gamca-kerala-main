@@ -1,2 +1,75 @@
 @import '../variables.scss';
 
+footer{
+    background-color: $blue-main;
+    border-radius: 20px;
+    color: $white;
+    background-image: url('/wave.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer-row{
+        padding: 2.5em!important;
+        @media(max-width:768px){
+            row-gap: 1em;
+        }
+        .navigation{
+           @media(max-width:768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+        }
+        .logo{
+            p{
+                color: $white;
+
+                @media(max-width:768px){
+                    text-align: center;
+                }
+            }
+        }
+
+        h2{
+            color: $white;
+            font-family: inherit;
+            font-size: 1.5625rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.625em;
+            margin-top: 0.9375em;
+
+            li{
+                text-decoration: none;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+
+                color: $white;
+                font-family: inherit;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                display: flex;
+                align-items: start;
+                gap: 1em;
+                @media(max-width: 576px){
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+            }
+        }
+    }
+}
