@@ -5,6 +5,9 @@
   background-position: center;
   background-size: cover;
 }
+.sm-contact-container-main .sm-contact-container {
+  gap: 1.8em;
+}
 .sm-contact-container-main .sm-contact-container h3 {
   color: #fff;
   font-family: inherit;
@@ -13,7 +16,13 @@
   font-weight: 700;
   line-height: normal;
 }
-.sm-contact-container-main .sm-contact-container .item p {
+.sm-contact-container-main .sm-contact-container .contact-items {
+  gap: 1.4em;
+}
+.sm-contact-container-main .sm-contact-container .contact-items .item {
+  gap: 1em;
+}
+.sm-contact-container-main .sm-contact-container .contact-items .item p {
   color: #fff;
   font-family: inherit;
   font-size: 1.875rem;

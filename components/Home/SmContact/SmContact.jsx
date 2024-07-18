@@ -1,3 +1,4 @@
+import  Button  from '@/components/Button/Button'
 import './smcontact.css'
 
 function SmContact({title,phone,email}) {
@@ -5,7 +6,7 @@ function SmContact({title,phone,email}) {
     <section className="sm-contact-container-main d-flex align-items-center justify-content-center margin-bottom">
       <div className="sm-contact-container container d-flex align-items-center justify-content-center flex-column text-center">
         <h3>{title}</h3>
-        <div className="contact-items">
+        <div className="contact-items d-flex align-items-center flex-column">
             <div className="item d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                 <g clip-path="url(#clip0_30_80)">
@@ -17,15 +18,17 @@ function SmContact({title,phone,email}) {
                     </clipPath>
                 </defs>
             </svg>
-                <p>Call Us:{phone}</p>
+            <p>Call Us:{phone}</p>
             </div>
             <div className="item d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
                 <path d="M22.6562 0.5H2.34375C1.04932 0.5 0 1.56331 0 2.875V17.125C0 18.4367 1.04932 19.5 2.34375 19.5H22.6562C23.9507 19.5 25 18.4367 25 17.125V2.875C25 1.56331 23.9507 0.5 22.6562 0.5ZM22.6562 2.875V4.894C21.5614 5.79744 19.816 7.20225 16.0846 10.163C15.2623 10.8185 13.6334 12.3932 12.5 12.3748C11.3668 12.3934 9.73735 10.8182 8.91538 10.163C5.18457 7.2027 3.43872 5.79759 2.34375 4.894V2.875H22.6562ZM2.34375 17.125V7.94157C3.4626 8.84461 5.04927 10.1118 7.46768 12.0308C8.53491 12.8821 10.4039 14.7614 12.5 14.75C14.5858 14.7614 16.4311 12.9094 17.5319 12.0312C19.9502 10.1123 21.5374 8.84471 22.6562 7.94162V17.125H2.34375Z" fill="white"/>
             </svg>
-                <p>Email:{email}</p>
+            <p>Email:{email}</p>
             </div>
         </div>
+
+        <Button text="Book Appointment"/>
       </div>
     </section>
   )
