@@ -21,4 +21,29 @@
 }
 .client-reviews-container-main .client-reviews-container .head .rating .stars {
   gap: 0.5em;
+}
+.client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
+  width: 20%;
+  min-width: 22.4em !important;
+  padding: 1.125rem 1.6875rem 1.1875rem 1.6875rem;
+  border-radius: 0.9375rem;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+  height: 12em;
+}
+.client-reviews-container-main .client-reviews-container .review-cards-container .cardd h6 {
+  color: #1B2B50;
+  font-family: inherit;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.client-reviews-container-main .client-reviews-container .review-cards-container .cardd p {
+  color: #555;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.6%; /* 1.27125rem */
 }/*# sourceMappingURL=client.css.map */

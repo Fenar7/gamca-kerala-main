@@ -35,7 +35,31 @@
 
         .review-cards-container{
             .cardd{
-                
+                width: 20%;
+                min-width: 22.4em!important;
+                padding: 1.125rem 1.6875rem 1.1875rem 1.6875rem;
+                border-radius: 0.9375rem;
+                border: 1px solid #D2D2D2;
+                background: #FFF;
+                height: 12em;
+
+                h6{
+                    color: $dark-blue;
+                    font-family: inherit;
+                    font-size: 1.375rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                p{
+                    color: $dark-grey-text;
+                    font-family: inherit;
+                    font-size: 0.9375rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 135.6%; /* 1.27125rem */
+                }
             }
         }
     }
