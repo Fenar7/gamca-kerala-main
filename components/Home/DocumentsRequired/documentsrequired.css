@@ -1,0 +1,16 @@
+.documents-required-container-main .documents-requried-container h2 {
+  color: #1B2B50;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.documents-required-container-main .documents-requried-container .item-card-container .item {
+  width: 31%;
+  background-color: red;
+  height: 19.9em;
+  display: flex;
+  padding: 1.6875rem;
+}/*# sourceMappingURL=documentsrequired.css.map */

@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.documents-required-container-main{
+    .documents-requried-container{
+        h2{
+            color: $dark-blue;
+            text-align: center;
+            font-family: inherit;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .item-card-container{
+            .item{
+                width: 31%;
+                background-color: red;
+                height: 19.9em;
+                display: flex;
+                padding: 1.6875rem;
+            }
+        }
+    }
+}
