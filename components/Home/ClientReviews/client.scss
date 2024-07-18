@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+.client-reviews-container-main{
+    .client-reviews-container{
+        .head{
+            .heading{
+                h2{
+                    color: $dark-blue;
+                    text-align: center;
+                    font-family: inherit;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+            }
+
+            .rating{
+                gap: 0.7em;
+                h4{
+                    color: $dark-blue;
+                    text-align: center;
+                    font-family: inherit;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .stars{
+                    gap: 0.5em;
+                }
+            }
+        }
+    }
+}

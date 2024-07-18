@@ -1,0 +1,24 @@
+.client-reviews-container-main .client-reviews-container .head .heading h2 {
+  color: #1B2B50;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.client-reviews-container-main .client-reviews-container .head .rating {
+  gap: 0.7em;
+}
+.client-reviews-container-main .client-reviews-container .head .rating h4 {
+  color: #1B2B50;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.client-reviews-container-main .client-reviews-container .head .rating .stars {
+  gap: 0.5em;
+}/*# sourceMappingURL=client.css.map */
