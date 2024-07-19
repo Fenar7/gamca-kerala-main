@@ -2,9 +2,10 @@ import './footer.css'
 
 function Footer() {
   return (
-    <footer className="container margin-bottom">
-            <div className="row d-flex footer-row">
-                <div className="col-12 col-md-3 logo navigation">    
+    <footer className= "margin-bottom container">
+            <div className="row d-flex footer-row container">
+                <div className="col-12 col-md-3 logo navigation">
+                  <img src="/logo-footer.svg" alt="" />    
                   <p className="mt-3">The Innovation in your Bathspace</p>
                 </div>
                 <div className="col-12 col-md-3 navigation">

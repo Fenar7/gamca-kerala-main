@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import BootsrapClient from '@/components/bootsrapClient';
 import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,8 @@ export default function RootLayout({ children }) {
       <body>
         <Header phone={"+91 894 3319 888"} email={"gamcakerala@gmail.com"}/>
         {children}
+
+        <Footer/>
         <BootsrapClient/>
       </body>
     </html>

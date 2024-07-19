@@ -46,8 +46,6 @@ export default function Home() {
      <ClientReviews/>
 
      <ContactSection/>
-
-     <Footer/>
    </div>
   );
 }
