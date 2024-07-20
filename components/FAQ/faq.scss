@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.faq-container-main{
+    .heading{
+        h1{
+            color: $dark-blue;
+            text-align: center;
+            font-family: inherit;
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p{
+            color: $grey-text;
+            text-align: center;
+            font-family: inherit;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130.8%; /* 1.4715rem */
+        }
+    }
+}

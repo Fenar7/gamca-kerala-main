@@ -34,6 +34,8 @@
         }
 
         .review-cards-container{
+            flex-wrap: wrap;
+            row-gap: 1.5em;
             .cardd{
                 width: 20%;
                 min-width: 22.4em!important;
@@ -42,6 +44,10 @@
                 border: 1px solid #D2D2D2;
                 background: #FFF;
                 height: 12em;
+
+                @media(max-width: 1101px){
+                    width: 48%;
+                }
 
                 h6{
                     color: $dark-blue;

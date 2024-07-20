@@ -4,10 +4,11 @@ function page() {
     let centeres=[
         {name:"This is name", address:"This is Address"},
         {name:"This is name2", address:"This is Address2"},
+        {name:"This is name3", address:"This is Addres3"},
         {name:"This is name3", address:"This is Addres3"}
     ]
 
-    
+
   return (
     <>
       <SingleExamCenter

@@ -26,6 +26,11 @@
   overflow: hidden;
   height: 21em;
 }
+@media (max-width: 1101px) {
+  .gamca-countries-container-main .gamca-countries-container .cards-container .cardd {
+    width: 48%;
+  }
+}
 .gamca-countries-container-main .gamca-countries-container .cards-container .cardd .image {
   position: relative;
 }

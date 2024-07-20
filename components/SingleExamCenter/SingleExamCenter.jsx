@@ -48,9 +48,9 @@ function SingleExamCenter({title,placename, secondtitle, paragraph, image1, bgUR
           <h3>Gamca Approved Medical Examination Centers In {placename}</h3>
         </div>
 
-        <div className="cards-container margin-bottom">
+        <div className="cards-container margin-bottom d-flex align-items-center justify-content-between">
         {centeres.map((centre, index) => (
-        <div className="cardd" key={index}>
+        <div className="cardd d-flex flex-column align-items-start" key={index}>
           <h4>{centre.name}</h4>
           <p>{centre.address}</p>
         </div>

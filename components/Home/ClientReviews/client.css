@@ -22,6 +22,10 @@
 .client-reviews-container-main .client-reviews-container .head .rating .stars {
   gap: 0.5em;
 }
+.client-reviews-container-main .client-reviews-container .review-cards-container {
+  flex-wrap: wrap;
+  row-gap: 1.5em;
+}
 .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
   width: 20%;
   min-width: 22.4em !important;
@@ -30,6 +34,11 @@
   border: 1px solid #D2D2D2;
   background: #FFF;
   height: 12em;
+}
+@media (max-width: 1101px) {
+  .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
+    width: 48%;
+  }
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container .cardd h6 {
   color: #1B2B50;

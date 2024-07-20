@@ -23,6 +23,18 @@
   box-shadow: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.45);
   gap: 0.81em;
 }
+@media (max-width: 1200px) {
+  .documents-required-container-main .documents-requried-container .item-card-container .item {
+    width: 48%;
+    min-width: unset !important;
+  }
+}
+@media (max-width: 990px) {
+  .documents-required-container-main .documents-requried-container .item-card-container .item {
+    width: 43%;
+    min-width: unset;
+  }
+}
 .documents-required-container-main .documents-requried-container .item-card-container .item h4 {
   color: #1B2B50;
   text-align: center;
