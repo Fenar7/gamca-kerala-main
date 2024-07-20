@@ -67,13 +67,47 @@ function Header({phone, email}) {
                 <Link href="/">Fees</Link>
               </li>
 
-              <li>
-                <Link href="/">Countries</Link>
-              </li>
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                GCC Countries
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">Bahrain</a>
+                  <a className="dropdown-item" href="#">Kuwait</a>
+                  <a className="dropdown-item" href="#">Oman</a>
+                  <a className="dropdown-item" href="#">Qatar</a>
+                  <a className="dropdown-item" href="#">Saudi Arabia</a>
+                  <a className="dropdown-item" href="#">UAE</a>
+                  <a className="dropdown-item" href="#">Yemen</a>
+                </div>
+            </li>
 
-              <li>
-                <Link href="/">GCC Countries</Link>
-              </li>
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Medical Centers
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">Ahmedabad</a>
+                  <a className="dropdown-item" href="#">Goa</a>
+                  <a className="dropdown-item" href="#">Hyderabad</a>
+                  <a className="dropdown-item" href="#">Jaipur</a>
+                  <a className="dropdown-item" href="#">Kolkata</a>
+                  <a className="dropdown-item" href="#">Lucknow</a>
+                  <a className="dropdown-item" href="#">Mangalore</a>
+                  <a className="dropdown-item" href="#">Manjeri</a>
+                  <a className="dropdown-item" href="#">Mumbai</a>
+                  <a className="dropdown-item" href="#">New Delhi</a>
+                  <a className="dropdown-item" href="#">Tirur</a>
+                  <a className="dropdown-item" href="#">Trichy</a>
+                  <a className="dropdown-item" href="#">Trivandrum</a>
+                  <a className="dropdown-item" href="#">Patna</a>
+                  <a className="dropdown-item" href="#">Kutch</a>
+                  <a className="dropdown-item" href="#">Banglore</a>
+                  <a className="dropdown-item" href="#">Calicut</a>
+                  <a className="dropdown-item" href="#">Chennai</a>
+                  <a className="dropdown-item" href="#">Chochin</a>
+                </div>
+            </li>
 
               <li>
                 <Link href="/">Medical Centers</Link>
@@ -93,7 +127,6 @@ function Header({phone, email}) {
 
               <li>
                 <Link href="/">Contact Us</Link>
-                
               </li>
               
             </ul>
