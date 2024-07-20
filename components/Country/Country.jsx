@@ -2,10 +2,14 @@ import  Button  from '@/components/Button/Button'
 import './country.css'
 import Image from 'next/image'
 
-function Country({title, pagename, secondtitle, paragraph, image1, image2}) {
+function Country({title, pagename, secondtitle, paragraph, image1, image2, bgURL}) {
+  const bgImageStyle = {
+    backgroundImage: `url(${bgURL})`,
+  };
+
   return (
     <section>
-      <div className="hero-container-main">
+      <div className="hero-container-main" style={bgImageStyle}>
         <div className="hero-container container d-flex align-items-center justify-content-center flex-column text-center">
           <h1>{title}</h1>
           <div className="breadcrumb">

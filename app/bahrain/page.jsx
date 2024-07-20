@@ -3,7 +3,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>
+    <>
       <Country
       title="Bahrain GAMCA Medical | Secure Your GAMCA Medical Registration: GMA Online Service"
       pagename="Bahrain"
@@ -17,8 +17,9 @@ Whether you're embarking on a new job opportunity or seeking to establish reside
 Prepare for your journey to Bahrain with confidence, knowing that your health requirements are taken care of through our seamless GAMCA registration process. Book your appointment now and embark on your adventure in Bahrain with peace of mind."
       image1='/bahrain-card-1.png'
       image2='/bahrain-card-2.png'
+      bgURL='/bahrain2-min.png'
       />
-    </div>
+    </>
   )
 }
 
