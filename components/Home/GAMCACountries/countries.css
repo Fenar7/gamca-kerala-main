@@ -1,5 +1,5 @@
 .gamca-countries-container-main .gamca-countries-container .heading-container {
-  width: 70%;
+  width: 80%;
 }
 .gamca-countries-container-main .gamca-countries-container .heading-container h2 {
   color: #1B2B50;
@@ -9,6 +9,11 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+@media (max-width: 990px) {
+  .gamca-countries-container-main .gamca-countries-container .heading-container h2 {
+    font-size: 2rem;
+  }
 }
 .gamca-countries-container-main .gamca-countries-container .cards-container {
   margin-top: 3em;
@@ -29,6 +34,12 @@
 @media (max-width: 1101px) {
   .gamca-countries-container-main .gamca-countries-container .cards-container .cardd {
     width: 48%;
+  }
+}
+@media (max-width: 990px) {
+  .gamca-countries-container-main .gamca-countries-container .cards-container .cardd {
+    width: 48%;
+    min-width: unset !important;
   }
 }
 .gamca-countries-container-main .gamca-countries-container .cards-container .cardd .image {

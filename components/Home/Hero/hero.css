@@ -28,6 +28,11 @@
   font-weight: 600;
   line-height: normal;
 }
+@media (max-width: 900px) {
+  .hero-container-main .hero-container h1 {
+    font-size: 3.2rem;
+  }
+}
 .hero-container-main .hero-container p {
   color: #FFF;
   font-family: inherit;
@@ -35,4 +40,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media (max-width: 900px) {
+  .hero-container-main .hero-container p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=hero.css.map */

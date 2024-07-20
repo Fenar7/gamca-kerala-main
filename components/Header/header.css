@@ -67,6 +67,11 @@
   line-height: normal;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 900px) {
+  .header-container .header-bottom .header-bottom-container ul li a {
+    font-size: 0.7rem;
+  }
+}
 .header-container .header-bottom .header-bottom-container ul li a.active {
   color: #1166EA !important;
 }

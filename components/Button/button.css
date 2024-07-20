@@ -15,6 +15,12 @@
   line-height: normal;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 900px) {
+  .btnn {
+    font-size: 1rem;
+    padding: 0.8rem 1.425rem;
+  }
+}
 
 .btnn:hover {
   background: #fff;

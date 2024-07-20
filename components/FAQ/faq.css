@@ -15,4 +15,46 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130.8%; /* 1.4715rem */
+}
+.faq-container-main .faq-container {
+  width: 75%;
+}
+@media (max-width: 576px) {
+  .faq-container-main .faq-container {
+    width: 90%;
+  }
+}
+.faq-container-main .faq-container .accordion {
+  width: 100% !important;
+}
+.faq-container-main .faq-container .accordion-item {
+  margin-bottom: 1em;
+  border: 2px solid #DEDEDE;
+  border-radius: 8px;
+  outline: none;
+  width: 100% !important;
+  flex-grow: none;
+}
+.faq-container-main .faq-container .accordion-item .accordion-header {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.faq-container-main .faq-container .accordion-item .accordion-header button {
+  color: #000;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.8%; /* 20.928px */
+}
+.faq-container-main .faq-container .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: #f0f0f0 !important;
+}
+.faq-container-main .faq-container .accordion-item .accordion-header .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.faq-container-main .faq-container .accordion-item .accordion-header .accordion-collapse {
+  width: 100% !important;
 }/*# sourceMappingURL=faq.css.map */

@@ -22,4 +22,52 @@
             line-height: 130.8%; /* 1.4715rem */
         }
     }
+
+    .faq-container{
+        width: 75%;
+        @media(max-width:576px){
+            width: 90%;
+        }
+
+        .accordion{
+            width: 100%!important;
+        }
+        
+
+        .accordion-item{
+            margin-bottom: 1em;
+            border: 2px solid #DEDEDE;
+            border-radius: 8px;
+            outline: none;
+            width: 100%!important;
+            flex-grow: none;
+
+            .accordion-header{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                button{
+                    color: #000;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130.8%; /* 20.928px */
+                }
+
+                .accordion-button:not(.collapsed){
+                    background-color: #f0f0f0!important;
+                }
+
+                .accordion-button:focus{
+                    border: none!important;
+                    box-shadow: none!important;
+                }
+
+                .accordion-collapse{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
 }

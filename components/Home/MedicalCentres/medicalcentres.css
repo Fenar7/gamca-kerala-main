@@ -12,6 +12,11 @@
   font-weight: 800;
   line-height: normal;
 }
+@media (max-width: 900px) {
+  .medical-centres-container-main .medical-centres-container .row .text-container h3 {
+    font-size: 2.4rem;
+  }
+}
 .medical-centres-container-main .medical-centres-container .row .text-container .list-container {
   margin-top: 2em;
   gap: 1.5em;
@@ -26,4 +31,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media (max-width: 900px) {
+  .medical-centres-container-main .medical-centres-container .row .text-container .list-container .list p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=medicalcentres.css.map */

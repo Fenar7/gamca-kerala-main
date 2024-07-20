@@ -16,6 +16,11 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 900px) {
+  .sm-contact-container-main .sm-contact-container h3 {
+    font-size: 2rem;
+  }
+}
 .sm-contact-container-main .sm-contact-container .contact-items {
   gap: 1.4em;
 }
@@ -29,4 +34,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media (max-width: 900px) {
+  .sm-contact-container-main .sm-contact-container .contact-items .item p {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=smcontact.css.map */

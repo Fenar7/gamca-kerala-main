@@ -3,7 +3,7 @@
 .gamca-countries-container-main{
     .gamca-countries-container{
         .heading-container{
-            width: 70%;
+            width: 80%;
             h2{
                 color: $dark-blue;
                 text-align: center;
@@ -12,6 +12,10 @@
                 font-style: normal;
                 font-weight: 800;
                 line-height: normal;
+
+                @media(max-width:990px){
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -32,6 +36,11 @@
                 height: 21em;
                 @media(max-width: 1101px){
                     width: 48%;
+                }
+
+                @media(max-width:990px){
+                    width: 48%;
+                    min-width: unset!important;
                 }
                 .image{
                     position: relative;

@@ -11,6 +11,13 @@
                     width: 27.5rem;
                     height: 24.625rem;
                 }
+
+                @media(max-width: 900px){
+                    .image{
+                        width: 20rem;
+                        height: 15rem;
+                    }
+                }
             }
 
             .text-container{
@@ -24,6 +31,10 @@
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
+
+                    @media(max-width: 900px){
+                        font-size: 2.8rem;
+                    }
                 }
 
                 p{
@@ -33,6 +44,9 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 139.2%; /* 1.392rem */
+                    @media(max-width: 900px){
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

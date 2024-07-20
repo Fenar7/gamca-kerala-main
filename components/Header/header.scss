@@ -74,6 +74,10 @@
                     font-weight: 500;
                     line-height: normal;
                     transition: all .3s ease-in-out;
+
+                    @media(max-width: 900px){
+                        font-size: 0.7rem;
+                    }
                 }
 
                 a.active{

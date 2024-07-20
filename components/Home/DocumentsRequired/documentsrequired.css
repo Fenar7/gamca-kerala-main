@@ -7,6 +7,11 @@
   font-weight: 800;
   line-height: normal;
 }
+@media (max-width: 900px) {
+  .documents-required-container-main .documents-requried-container h2 {
+    font-size: 2.1rem;
+  }
+}
 .documents-required-container-main .documents-requried-container .item-card-container {
   flex-wrap: wrap;
   row-gap: 2em;
@@ -31,18 +36,23 @@
 }
 @media (max-width: 990px) {
   .documents-required-container-main .documents-requried-container .item-card-container .item {
-    width: 43%;
+    width: 47%;
     min-width: unset;
+    height: 19rem;
   }
 }
 .documents-required-container-main .documents-requried-container .item-card-container .item h4 {
   color: #1B2B50;
-  text-align: center;
   font-family: inherit;
   font-size: 1.6875rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+@media (max-width: 990px) {
+  .documents-required-container-main .documents-requried-container .item-card-container .item h4 {
+    font-size: 1.5rem;
+  }
 }
 .documents-required-container-main .documents-requried-container .item-card-container .item p {
   color: #555;
@@ -51,4 +61,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: 135.6%; /* 1.356rem */
+}
+@media (max-width: 990px) {
+  .documents-required-container-main .documents-requried-container .item-card-container .item p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=documentsrequired.css.map */
