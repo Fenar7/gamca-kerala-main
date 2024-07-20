@@ -1,1 +1,64 @@
-/*# sourceMappingURL=singlecenter.css.map */
+.hero-container-main {
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container-main .hero-container {
+  height: 100%;
+  gap: 1.1em;
+}
+.hero-container-main .hero-container h1 {
+  color: #fff;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero-container-main .hero-container a {
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero-container-main .hero-container span {
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.info-section-container-main .info-section-container .text-container {
+  gap: 1.1em;
+}
+.info-section-container-main .info-section-container .text-container h2 {
+  color: #1B2B50;
+  font-family: inherit;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.info-section-container-main .info-section-container .text-container p {
+  color: #555;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.6%; /* 1.356rem */
+}
+.info-section-container-main .image-container {
+  gap: 1em;
+}
+.info-section-container-main .image-container .image {
+  width: 32.1rem;
+  height: 19.1rem;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}/*# sourceMappingURL=singlecenter.css.map */
