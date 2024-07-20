@@ -24,13 +24,10 @@ footer{
            }
         }
         .logo{
-            p{
-                color: $white;
-
-                @media(max-width:768px){
-                    text-align: center;
-                }
+            img{
+                width: 90%;
             }
+
         }
 
         h2{
@@ -40,6 +37,10 @@ footer{
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+
+            @media(max-width: 1000px){
+                font-size: 1.2rem;
+            }
         }
 
         ul{
@@ -68,6 +69,10 @@ footer{
                 @media(max-width: 576px){
                     text-align: center;
                     justify-content: center;
+                }
+
+                @media(max-width: 1000px){
+                    font-size: 0.9rem;
                 }
                 
             }

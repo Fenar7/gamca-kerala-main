@@ -4,12 +4,23 @@
     .header-top{
         padding-top: 1.4em!important;
         padding-bottom: 1.4em!important;
+        @media(max-width:768px){
+            height: 5rem;
+            background-color: grey;
+        }
         .logo-container{
             width: 14.375rem;
             height: 3.375rem;
+            @media(max-width:768px){
+                width: 10rem;
+                height: 5rem;
+            }
         }
 
         .contact-container{
+            @media(max-width:768px){
+                display: none!important;
+            }
             gap: 1.5em;
             .contact-card{
                 gap: 0.69em;
@@ -53,6 +64,9 @@
         border-top: 1px solid #C5C5C5;
         padding-top: 1em!important;
         padding-bottom: 1em!important;
+        @media(max-width:768px){
+            display: none!important;
+        }
         .header-bottom-container{
            ul{
             margin: 0px;

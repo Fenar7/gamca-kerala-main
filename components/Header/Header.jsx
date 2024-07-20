@@ -15,6 +15,8 @@ function Header({phone, email}) {
             alt="gamca kerala logo"
             />
         </div>
+
+        
         <div className="contact-container d-flex align-items-center">
             <div className="contact-card d-flex align-items-center">
                 <div className="circle d-flex justify-content-center align-items-center">
@@ -92,11 +94,14 @@ function Header({phone, email}) {
 
               <li>
                 <Link href="/">Contact Us</Link>
+                
               </li>
+              
             </ul>
         </div>
       </div>
     </nav>
+    
   )
 }
 
