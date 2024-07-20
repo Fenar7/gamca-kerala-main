@@ -4,19 +4,12 @@
 }
 @media (max-width: 768px) {
   .header-container .header-top {
-    height: 5rem;
-    background-color: grey;
+    display: none !important;
   }
 }
 .header-container .header-top .logo-container {
   width: 14.375rem;
   height: 3.375rem;
-}
-@media (max-width: 768px) {
-  .header-container .header-top .logo-container {
-    width: 10rem;
-    height: 5rem;
-  }
 }
 .header-container .header-top .contact-container {
   gap: 1.5em;
@@ -99,4 +92,9 @@
 }
 .header-container .header-bottom .header-bottom-container ul li a:hover {
   color: #1166EA !important;
+}
+@media (min-width: 768px) {
+  .header-container .navbar-mobile {
+    display: none !important;
+  }
 }/*# sourceMappingURL=header.css.map */

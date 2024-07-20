@@ -5,16 +5,11 @@
         padding-top: 1.4em!important;
         padding-bottom: 1.4em!important;
         @media(max-width:768px){
-            height: 5rem;
-            background-color: grey;
+            display: none!important;
         }
         .logo-container{
             width: 14.375rem;
             height: 3.375rem;
-            @media(max-width:768px){
-                width: 10rem;
-                height: 5rem;
-            }
         }
 
         .contact-container{
@@ -103,6 +98,12 @@
                 }
             }
            }
+        }
+    }
+
+    .navbar-mobile{
+        @media(min-width:768px){
+            display: none!important;
         }
     }
 }
