@@ -35,7 +35,7 @@
 
         .review-cards-container{
             flex-wrap: wrap;
-            row-gap: 1.5em;
+            row-gap: 1em;
             .cardd{
                 width: 20%;
                 min-width: 22.4em!important;
@@ -47,6 +47,7 @@
 
                 @media(max-width: 1101px){
                     width: 48%;
+                    min-width: unset!important;
                 }
 
                 h6{

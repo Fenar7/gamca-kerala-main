@@ -8,8 +8,13 @@
   border-radius: 1.25rem;
   padding: 3.1em;
 }
+@media (max-width: 900px) {
+  .contact-us-section .contact-us {
+    height: 90vh;
+  }
+}
 .contact-us-section .contact-us .text-content {
-  height: 100%;
+  height: 100% !important;
   position: relative;
 }
 .contact-us-section .contact-us .text-content h4 {

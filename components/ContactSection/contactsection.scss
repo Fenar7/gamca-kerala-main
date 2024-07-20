@@ -11,8 +11,12 @@
         border-radius: 1.25rem;
         padding: 3.1em;
 
+        @media(max-width: 900px){
+            height: 90vh;
+        }
+
         .text-content{
-            height: 100%;
+            height: 100%!important;
             position: relative;
             h4{
                 position: absolute;

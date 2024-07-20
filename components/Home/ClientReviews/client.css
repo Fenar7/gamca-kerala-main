@@ -24,7 +24,7 @@
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container {
   flex-wrap: wrap;
-  row-gap: 1.5em;
+  row-gap: 1em;
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
   width: 20%;
@@ -38,6 +38,7 @@
 @media (max-width: 1101px) {
   .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
     width: 48%;
+    min-width: unset !important;
   }
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container .cardd h6 {
