@@ -3,6 +3,9 @@
 .client-reviews-container-main{
     .client-reviews-container{
         .head{
+            @media(max-width:768px){
+                flex-direction: column;
+            }
             .heading{
                 h2{
                     color: $dark-blue;
@@ -12,6 +15,9 @@
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
+                    @media(max-width:768px){
+                        font-size: 1.9rem;
+                    }
                 }
             }
 

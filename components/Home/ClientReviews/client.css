@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .head {
+    flex-direction: column;
+  }
+}
 .client-reviews-container-main .client-reviews-container .head .heading h2 {
   color: #1B2B50;
   text-align: center;
@@ -6,6 +11,11 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .head .heading h2 {
+    font-size: 1.9rem;
+  }
 }
 .client-reviews-container-main .client-reviews-container .head .rating {
   gap: 0.7em;

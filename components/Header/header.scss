@@ -105,5 +105,13 @@
         @media(min-width:768px){
             display: none!important;
         }
+
+        padding: 1em 1em;
+
+        .navbar-brand{
+            img{
+                width: 70%;
+            }
+        }
     }
 }

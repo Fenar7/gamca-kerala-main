@@ -60,11 +60,11 @@ function Header({phone, email}) {
               </li>
 
               <li>
-                <Link href="/">About us</Link>
+                <Link href="/about">About us</Link>
               </li>
 
               <li>
-                <Link href="/">Fees</Link>
+                <Link href="/fees">Fees</Link>
               </li>
 
             <li className="nav-item dropdown">
@@ -72,13 +72,13 @@ function Header({phone, email}) {
                 GCC Countries
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Bahrain</a>
-                  <a className="dropdown-item" href="#">Kuwait</a>
-                  <a className="dropdown-item" href="#">Oman</a>
-                  <a className="dropdown-item" href="#">Qatar</a>
-                  <a className="dropdown-item" href="#">Saudi Arabia</a>
-                  <a className="dropdown-item" href="#">UAE</a>
-                  <a className="dropdown-item" href="#">Yemen</a>
+                  <a className="dropdown-item" href="/bahrain">Bahrain</a>
+                  <a className="dropdown-item" href="/kuwait">Kuwait</a>
+                  <a className="dropdown-item" href="/oman">Oman</a>
+                  <a className="dropdown-item" href="/qatar">Qatar</a>
+                  <a className="dropdown-item" href="saudiarabia">Saudi Arabia</a>
+                  <a className="dropdown-item" href="uae">UAE</a>
+                  <a className="dropdown-item" href="yemen">Yemen</a>
                 </div>
             </li>
 
@@ -87,46 +87,42 @@ function Header({phone, email}) {
                 Medical Centers
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Ahmedabad</a>
-                  <a className="dropdown-item" href="#">Goa</a>
-                  <a className="dropdown-item" href="#">Hyderabad</a>
-                  <a className="dropdown-item" href="#">Jaipur</a>
-                  <a className="dropdown-item" href="#">Kolkata</a>
-                  <a className="dropdown-item" href="#">Lucknow</a>
-                  <a className="dropdown-item" href="#">Mangalore</a>
-                  <a className="dropdown-item" href="#">Manjeri</a>
-                  <a className="dropdown-item" href="#">Mumbai</a>
-                  <a className="dropdown-item" href="#">New Delhi</a>
-                  <a className="dropdown-item" href="#">Tirur</a>
-                  <a className="dropdown-item" href="#">Trichy</a>
-                  <a className="dropdown-item" href="#">Trivandrum</a>
-                  <a className="dropdown-item" href="#">Patna</a>
-                  <a className="dropdown-item" href="#">Kutch</a>
-                  <a className="dropdown-item" href="#">Banglore</a>
-                  <a className="dropdown-item" href="#">Calicut</a>
-                  <a className="dropdown-item" href="#">Chennai</a>
-                  <a className="dropdown-item" href="#">Chochin</a>
+                  <a className="dropdown-item" href="/ahmedabad">Ahmedabad</a>
+                  <a className="dropdown-item" href="goa">Goa</a>
+                  <a className="dropdown-item" href="/hyderabad">Hyderabad</a>
+                  <a className="dropdown-item" href="/jaipur">Jaipur</a>
+                  <a className="dropdown-item" href="/kolkata">Kolkata</a>
+                  <a className="dropdown-item" href="/lucknow">Lucknow</a>
+                  <a className="dropdown-item" href="/mangalore">Mangalore</a>
+                  <a className="dropdown-item" href="/manjeri">Manjeri</a>
+                  <a className="dropdown-item" href="/mumbai">Mumbai</a>
+                  <a className="dropdown-item" href="/newdelhi">New Delhi</a>
+                  <a className="dropdown-item" href="/tirur">Tirur</a>
+                  <a className="dropdown-item" href="/trichy">Trichy</a>
+                  <a className="dropdown-item" href="/trivandrum">Trivandrum</a>
+                  <a className="dropdown-item" href="/patna">Patna</a>
+                  <a className="dropdown-item" href="/kutch">Kutch</a>
+                  <a className="dropdown-item" href="/banglore">Banglore</a>
+                  <a className="dropdown-item" href="/calicut">Calicut</a>
+                  <a className="dropdown-item" href="/chennai">Chennai</a>
+                  <a className="dropdown-item" href="/cochin">Cochin</a>
                 </div>
             </li>
 
               <li>
-                <Link href="/">Medical Centers</Link>
+                <Link href="/wafid">WAFID</Link>
               </li>
 
               <li>
-                <Link href="/">WAFID</Link>
+                <Link href="/faq">FAQ</Link>
               </li>
 
               <li>
-                <Link href="/">FAQ</Link>
+                <Link href="/terms&conditions">Terms & Conditions</Link>
               </li>
 
               <li>
-                <Link href="/">Terms & Conditions</Link>
-              </li>
-
-              <li>
-                <Link href="/">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
               
             </ul>
@@ -134,31 +130,72 @@ function Header({phone, email}) {
       </div>
 
       <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
-      <a className="navbar-brand" href="#">BrandName</a>
+      <a className="navbar-brand" href="#"><img src="/logo-footer.svg" alt="" /></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="#">About us</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Fees</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
+              GCC Countries
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">Service 1</a>
-              <a className="dropdown-item" href="#">Service 2</a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="#">Service 3</a>
+              <a className="dropdown-item" href="#">Bahrain</a>
+              <a className="dropdown-item" href="#">Kuwait</a>
+              <a className="dropdown-item" href="#">Oman</a>
+              <a className="dropdown-item" href="#">Qatar</a>
+              <a className="dropdown-item" href="#">Saudi Arabia</a>
+              <a className="dropdown-item" href="#">UAE</a>
+              <a className="dropdown-item" href="#">Yemen</a>
+            </div>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Medical Centers
+            </a>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a className="dropdown-item" href="/ahmedabad">Ahmedabad</a>
+                  <a className="dropdown-item" href="goa">Goa</a>
+                  <a className="dropdown-item" href="/hyderabad">Hyderabad</a>
+                  <a className="dropdown-item" href="/jaipur">Jaipur</a>
+                  <a className="dropdown-item" href="/kolkata">Kolkata</a>
+                  <a className="dropdown-item" href="/lucknow">Lucknow</a>
+                  <a className="dropdown-item" href="/mangalore">Mangalore</a>
+                  <a className="dropdown-item" href="/manjeri">Manjeri</a>
+                  <a className="dropdown-item" href="/mumbai">Mumbai</a>
+                  <a className="dropdown-item" href="/newdelhi">New Delhi</a>
+                  <a className="dropdown-item" href="/tirur">Tirur</a>
+                  <a className="dropdown-item" href="/trichy">Trichy</a>
+                  <a className="dropdown-item" href="/trivandrum">Trivandrum</a>
+                  <a className="dropdown-item" href="/patna">Patna</a>
+                  <a className="dropdown-item" href="/kutch">Kutch</a>
+                  <a className="dropdown-item" href="/banglore">Banglore</a>
+                  <a className="dropdown-item" href="/calicut">Calicut</a>
+                  <a className="dropdown-item" href="/chennai">Chennai</a>
+                  <a className="dropdown-item" href="/cochin">Cochin</a>
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
+            <a className="nav-link" href="#">WAFID</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">FAQ</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Terms & Conditions</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Contact Us</a>
           </li>
         </ul>
       </div>
