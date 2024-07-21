@@ -24,6 +24,11 @@
         font-size: 1rem;
         padding: 0.8rem 1.425rem;
     }
+
+    @media(max-width: 768px){
+        font-size: 0.9rem;
+        padding: 0.8rem 1.325rem;
+    }
 }
 
 .btnn:hover{

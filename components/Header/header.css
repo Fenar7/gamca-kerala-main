@@ -101,6 +101,9 @@
     display: none !important;
   }
 }
+.header-container .navbar-mobile .navbar-brand {
+  width: 70%;
+}
 .header-container .navbar-mobile .navbar-brand img {
   width: 70%;
 }/*# sourceMappingURL=header.css.map */

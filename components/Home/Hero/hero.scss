@@ -31,6 +31,10 @@
             @media(max-width: 900px){
                 font-size: 3.2rem;
             }
+
+            @media(max-width:768px){
+                font-size: 2.2rem;
+            }
         }
 
         p{
@@ -42,6 +46,10 @@
             line-height: normal;
             @media(max-width: 900px){
                 font-size: 0.9rem;
+            }
+
+            @media(max-width:768px){
+                font-size: 0.7rem;
             }
         }
     }
