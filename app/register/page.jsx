@@ -10,10 +10,10 @@ function page() {
             <form>
                 <div className="form-row">
                     <div className="form-group custom-select-wrapper">
-                        <label htmlFor="exampleFormControlSelect1">Example select</label>
+                        <label htmlFor="country">Country</label>
                         <div className="custom-select-container">
-                            <select className="form-control custom-select" id="exampleFormControlSelect1">
-                                <option>1</option>
+                            <select className="form-control custom-select" id="country">
+                                <option value=""disabled selected>Select Your Country</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -24,10 +24,10 @@ function page() {
                     </div>
 
                     <div className="form-group custom-select-wrapper">
-                        <label htmlFor="exampleFormControlSelect1">Example select</label>
+                        <label htmlFor="city">City</label>
                         <div className="custom-select-container">
-                            <select className="form-control custom-select" id="exampleFormControlSelect1">
-                                <option>1</option>
+                            <select className="form-control custom-select" id="city">
+                                <option value=""disabled selected>Select Your City</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -38,10 +38,10 @@ function page() {
                     </div>
 
                     <div className="form-group custom-select-wrapper">
-                        <label htmlFor="exampleFormControlSelect1">Example select</label>
+                        <label htmlFor="countrytravellingto">Country Traveling To</label>
                         <div className="custom-select-container">
-                            <select className="form-control custom-select" id="exampleFormControlSelect1">
-                                <option>1</option>
+                            <select className="form-control custom-select" id="countrytravellingto">
+                                <option value=""disabled selected>Select GCC Country</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
