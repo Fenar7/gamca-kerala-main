@@ -22,12 +22,12 @@ function Country({title, pagename, secondtitle, paragraph, image1, image2, bgURL
       <div className="info-section-container-main margin-bottom">
         <div className="info-section-container margin-top d-flex align-items-center justify-content-center">
           <div className="row container">
-          <div className="col-12 col-md-6 text-container d-flex align-items-start justify-content-center flex-column">
+          <div className="col-12 col-lg-6 text-container d-flex align-items-start justify-content-center flex-column">
             <h2>{secondtitle}</h2>
             <p>{paragraph}</p>
             <Button text="Book an Appointment"/>
           </div>
-          <div className="col-12 col-md-6 image-container d-flex flex-column align-items-end justify-content-between">
+          <div className="col-12 col-lg-6 image-container d-flex flex-column align-items-end justify-content-between">
             <div className="image position-relative">
               <Image
               src={image1}
