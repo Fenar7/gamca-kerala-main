@@ -111,3 +111,9 @@ a{
         margin-bottom: 1.5625em;
     }
 }
+
+.container{
+    @media(max-width:768px){
+        padding: 0em 1.5em!important;
+    }
+}

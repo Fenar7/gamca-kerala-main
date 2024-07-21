@@ -6,7 +6,7 @@ function MedicalCentres({title, points}) {
     <section className="medical-centres-container-main margin-top margin-bottom">
       <div className="medical-centres-container container">
         <div className="row">
-            <div className="col-6 image-container d-flex align-items-center">
+            <div className="col-12 col-md-6 image-container d-flex align-items-center">
                 <div className="image position-relative">
                     <Image
                         src="/doc-ins.png"
@@ -16,7 +16,7 @@ function MedicalCentres({title, points}) {
                     />
                 </div>
             </div>
-            <div className="col-6 text-container d-flex justify-content-center flex-column">
+            <div className="col-12 col-md-6 text-container d-flex justify-content-center flex-column">
                 <h3>{title}</h3>
                 <div className="list-container d-flex flex-column">
                     {points.map((point, index) => (

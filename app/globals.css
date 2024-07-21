@@ -102,4 +102,10 @@ a {
   .margin-bottom {
     margin-bottom: 1.5625em;
   }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0em 1.5em !important;
+  }
 }/*# sourceMappingURL=globals.css.map */

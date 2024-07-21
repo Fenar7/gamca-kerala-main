@@ -6,8 +6,8 @@ import './about.css'
 function AboutSection({title, description}) {
   return (
     <section className="about-us-container-main">
-        <div className="about-us-container container d-flex flex-column align-items-center justify-content-center">
-            <div className="row">
+        <div className="about-us-container d-flex flex-column align-items-center justify-content-center">
+            <div className="row container">
                 <div className="col-12 col-md-6 text-container d-flex flex-column align-items-start justify-content-center">
                     <h2>{title}</h2>
                     <p>{description}</p>

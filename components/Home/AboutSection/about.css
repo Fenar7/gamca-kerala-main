@@ -2,6 +2,12 @@
   padding-top: 7.5em;
   padding-bottom: 7.5em;
 }
+@media (max-width: 768px) {
+  .about-us-container-main {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
 .about-us-container-main .about-us-container .row .image-container {
   padding-left: 2.5em;
 }
@@ -19,10 +25,16 @@
   gap: 1.25em;
   padding-right: 2.5em;
 }
+@media (max-width: 768px) {
+  .about-us-container-main .about-us-container .row .text-container {
+    justify-content: center;
+    align-items: center !important;
+  }
+}
 .about-us-container-main .about-us-container .row .text-container h2 {
   color: #1B2B50;
   text-align: left;
-  font-family: "SF Pro Display";
+  font-family: inherit;
   font-size: 3.125rem;
   font-style: normal;
   font-weight: 800;
@@ -31,6 +43,12 @@
 @media (max-width: 900px) {
   .about-us-container-main .about-us-container .row .text-container h2 {
     font-size: 2.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-container-main .about-us-container .row .text-container h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 .about-us-container-main .about-us-container .row .text-container p {
@@ -44,5 +62,16 @@
 @media (max-width: 900px) {
   .about-us-container-main .about-us-container .row .text-container p {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-container-main .about-us-container .row .text-container p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-container-main .about-us-container .row .text-container {
+    margin-bottom: 1.5em;
   }
 }/*# sourceMappingURL=about.css.map */
