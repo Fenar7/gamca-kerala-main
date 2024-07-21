@@ -9,10 +9,21 @@
             line-height: normal;
         }
 
+        .grp-heading{
+            color: #1B2B50;
+            font-family: inherit;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 1.1em!important;
+            margin-bottom: 0.5em!important;
+        }
+
         .form-row{
             display: flex;
             gap: 2em;
-            margin-top: 1.5em;
+            margin-top: 1em ;
 
             @media(max-width:768px){
                 flex-direction: column;
