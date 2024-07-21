@@ -14,6 +14,10 @@
             @media(max-width: 900px){
                 font-size: 2.1rem;
             }
+
+            @media(max-width: 768px){
+                font-size: 2rem;
+            }
         }
 
         .item-card-container{
@@ -42,6 +46,11 @@
                     height: 19rem;
                 }
 
+                @media(max-width: 768px){
+                    width: 100%;
+                    height: unset;
+                }
+
                 h4{
                     color: $dark-blue;
                     font-family: inherit;
@@ -52,6 +61,10 @@
 
                     @media(max-width:990px){
                         font-size: 1.5rem;
+                    }
+
+                    @media(max-width: 768px){
+                        font-size: 1.3rem;
                     }
                 }
 

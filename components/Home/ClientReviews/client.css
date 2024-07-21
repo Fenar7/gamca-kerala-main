@@ -14,11 +14,16 @@
 }
 @media (max-width: 768px) {
   .client-reviews-container-main .client-reviews-container .head .heading h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 .client-reviews-container-main .client-reviews-container .head .rating {
   gap: 0.7em;
+}
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .head .rating {
+    margin-top: 0.5em;
+  }
 }
 .client-reviews-container-main .client-reviews-container .head .rating h4 {
   color: #1B2B50;
@@ -29,8 +34,18 @@
   font-weight: 800;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .head .rating h4 {
+    font-size: 1.8rem;
+  }
+}
 .client-reviews-container-main .client-reviews-container .head .rating .stars {
   gap: 0.5em;
+}
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .head .rating .image {
+    width: 4rem;
+  }
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container {
   flex-wrap: wrap;
@@ -49,6 +64,11 @@
   .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
     width: 48%;
     min-width: unset !important;
+  }
+}
+@media (max-width: 768px) {
+  .client-reviews-container-main .client-reviews-container .review-cards-container .cardd {
+    width: 100%;
   }
 }
 .client-reviews-container-main .client-reviews-container .review-cards-container .cardd h6 {

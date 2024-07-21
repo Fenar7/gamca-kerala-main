@@ -21,6 +21,11 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .sm-contact-container-main .sm-contact-container h3 {
+    font-size: 1.5rem;
+  }
+}
 .sm-contact-container-main .sm-contact-container .contact-items {
   gap: 1.4em;
 }
@@ -38,5 +43,10 @@
 @media (max-width: 900px) {
   .sm-contact-container-main .sm-contact-container .contact-items .item p {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .sm-contact-container-main .sm-contact-container .contact-items .item p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=smcontact.css.map */

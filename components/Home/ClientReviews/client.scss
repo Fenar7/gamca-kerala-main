@@ -16,13 +16,17 @@
                     font-weight: 800;
                     line-height: normal;
                     @media(max-width:768px){
-                        font-size: 1.9rem;
+                        font-size: 2rem;
                     }
+
                 }
             }
 
             .rating{
                 gap: 0.7em;
+                @media(max-width: 768px){
+                    margin-top: 0.5em;
+                }
                 h4{
                     color: $dark-blue;
                     text-align: center;
@@ -31,10 +35,20 @@
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
+
+                    @media(max-width: 768px){
+                        font-size: 1.8rem;
+                    }
                 }
 
                 .stars{
                     gap: 0.5em;
+                }
+
+                @media(max-width: 768px){
+                    .image{
+                        width: 4rem;
+                    }
                 }
             }
         }
@@ -54,6 +68,10 @@
                 @media(max-width: 1101px){
                     width: 48%;
                     min-width: unset!important;
+                }
+
+                @media(max-width: 768px){
+                    width: 100%;
                 }
 
                 h6{

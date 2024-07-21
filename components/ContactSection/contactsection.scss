@@ -15,9 +15,20 @@
             height: 90vh;
         }
 
+        @media(max-width: 768px){
+            height: unset;
+            padding: 1em;
+        }
+
         .text-content{
             height: 100%!important;
             position: relative;
+            @media(max-width: 768px){
+                display: flex;
+                gap: 1em;
+                margin-bottom: 1em;
+                
+            }
             h4{
                 position: absolute;
                 top: 0px;
@@ -28,6 +39,10 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                @media(max-width: 768px){
+                    position: relative;
+                    font-size: 1.5rem;
+                }
             }
 
             h5{
@@ -41,6 +56,13 @@
                 span{
                     color: $blue-main;
                 }
+
+                @media(max-width: 768px){
+                    font-size: 1.7rem;
+                    
+                }
+
+                
             }
 
             p{
@@ -50,6 +72,11 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+
+                @media(max-width: 768px){
+                    font-size: 0.8rem;
+                    
+                }
             }
 
             .contact-details{
@@ -60,6 +87,11 @@
 
                 .contact-item{
                     gap: 0.5em;
+                }
+
+                @media(max-width: 768px){
+                    position: relative;
+                    
                 }
             }
         }

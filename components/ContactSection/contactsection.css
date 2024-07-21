@@ -13,9 +13,22 @@
     height: 90vh;
   }
 }
+@media (max-width: 768px) {
+  .contact-us-section .contact-us {
+    height: unset;
+    padding: 1em;
+  }
+}
 .contact-us-section .contact-us .text-content {
   height: 100% !important;
   position: relative;
+}
+@media (max-width: 768px) {
+  .contact-us-section .contact-us .text-content {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
 }
 .contact-us-section .contact-us .text-content h4 {
   position: absolute;
@@ -28,6 +41,12 @@
   font-weight: 500;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  .contact-us-section .contact-us .text-content h4 {
+    position: relative;
+    font-size: 1.5rem;
+  }
+}
 .contact-us-section .contact-us .text-content h5 {
   color: #fff;
   font-family: inherit;
@@ -39,6 +58,11 @@
 .contact-us-section .contact-us .text-content h5 span {
   color: #1166EA;
 }
+@media (max-width: 768px) {
+  .contact-us-section .contact-us .text-content h5 {
+    font-size: 1.7rem;
+  }
+}
 .contact-us-section .contact-us .text-content p {
   color: #fff;
   font-family: inherit;
@@ -46,6 +70,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .contact-us-section .contact-us .text-content p {
+    font-size: 0.8rem;
+  }
 }
 .contact-us-section .contact-us .text-content .contact-details {
   position: absolute;
@@ -55,6 +84,11 @@
 }
 .contact-us-section .contact-us .text-content .contact-details .contact-item {
   gap: 0.5em;
+}
+@media (max-width: 768px) {
+  .contact-us-section .contact-us .text-content .contact-details {
+    position: relative;
+  }
 }
 .contact-us-section .contact-us .contact-form {
   border-radius: 1.25rem;

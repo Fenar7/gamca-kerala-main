@@ -18,7 +18,7 @@ function ClientReviews() {
                         <img src="/star.svg" alt="" />
                         <img src="/star.svg" alt="" />
                     </div>
-                    <img src="/ongoogle.svg" alt="" />
+                    <img src="/ongoogle.svg" alt="" className="image"/>
             </div>
         </div>
 

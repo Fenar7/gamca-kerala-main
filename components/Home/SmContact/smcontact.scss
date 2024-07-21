@@ -19,6 +19,10 @@
             @media(max-width: 900px){
                 font-size: 2rem;
             }
+
+            @media(max-width: 768px){
+                font-size: 1.5rem;
+            }
         }
 
         .contact-items{
@@ -35,6 +39,10 @@
 
                     @media(max-width: 900px){
                         font-size: 1.4rem;
+                    }
+
+                    @media(max-width: 768px){
+                        font-size: 1rem;
                     }
                 }
             }

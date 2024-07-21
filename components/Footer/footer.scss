@@ -10,6 +10,10 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media(max-width: 768px){
+        width: 90%!important;
+    }
+
     .footer-row{
         padding: 2.5em!important;
         @media(max-width:768px){
