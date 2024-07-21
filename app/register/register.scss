@@ -12,10 +12,20 @@
         .form-row{
             display: flex;
             gap: 2em;
+            margin-top: 1.5em;
 
             @media(max-width:768px){
                 flex-direction: column;
                 row-gap: 1em;
+            }
+
+            label{
+                color: #000;
+                font-family: inherit;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
             }
         }
 

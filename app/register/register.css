@@ -9,12 +9,21 @@
 .form-container-main .form-container .form-row {
   display: flex;
   gap: 2em;
+  margin-top: 1.5em;
 }
 @media (max-width: 768px) {
   .form-container-main .form-container .form-row {
     flex-direction: column;
     row-gap: 1em;
   }
+}
+.form-container-main .form-container .form-row label {
+  color: #000;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .form-container-main .form-container .custom-select-wrapper {
   position: relative;
