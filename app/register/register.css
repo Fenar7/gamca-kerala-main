@@ -10,6 +10,12 @@
   display: flex;
   gap: 2em;
 }
+@media (max-width: 768px) {
+  .form-container-main .form-container .form-row {
+    flex-direction: column;
+    row-gap: 1em;
+  }
+}
 .form-container-main .form-container .custom-select-wrapper {
   position: relative;
   width: 100%; /* Adjust based on layout needs */
