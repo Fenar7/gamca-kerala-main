@@ -26,7 +26,7 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   dateofbirth: {
-    type: Date,
+    type: String,
     required: true,
   },
   nationality: {
@@ -53,7 +53,7 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   passportissuedate: {
-    type: Date,
+    type: String,
     required: true,
   },
   passportissueplace: {
@@ -61,7 +61,7 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   passportexpirydate: {
-    type: Date,
+    type: String,
     required: true,
   },
   visatype: {

@@ -32,31 +32,44 @@ function Page() {
           ...prev,
           [name]: value,
         }));
+        console.log(formData)
     };
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     console.log('userobject-----'+formData)
+    //     const response = await fetch('/api/register', {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //       },
+    //       body: JSON.stringify(formData),
+    //     });
+    
+    //     if (response.ok) {
+    //       console.log('User registered successfully');
+    //     } else {
+    //       console.error('Failed to register user'+response);
+    //     }
+    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Ensure dates are properly formatted as YYYY-MM-DD
-        const formattedData = {
-          ...formData,
-          dateofbirth: new Date(formData.dateofbirth).toISOString().split('T')[0],
-          passportissuedate: new Date(formData.passportissuedate).toISOString().split('T')[0],
-          passportexpirydate: new Date(formData.passportexpirydate).toISOString().split('T')[0]
-        };
-
+        console.log('userobject-----'+formData)
         const response = await fetch('/api/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(formattedData),
+          body: JSON.stringify(
+            formData
+          ),
         });
-
+    
         if (response.ok) {
           console.log('User registered successfully');
         } else {
-          console.error('Failed to register user', await response.json());
+          console.error('Failed to register user'+response);
         }
     };
 

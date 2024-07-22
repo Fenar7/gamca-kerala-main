@@ -7,15 +7,13 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  console.log(req.body);
-
   try {
     const {
       country, city, countrytravellingto, firstname, lastname,
       dateofbirth, nationality, gender, martialstatus, passportnumber, confirmpassportnumber,
       passportissuedate, passportissueplace, passportexpirydate, visatype, email, phone,
       nationalid, postappliedfor, other
-    } = req.body;
+    } = await req.json();
 
     await connectToDB();
 
@@ -25,15 +23,15 @@ export default async function handler(req, res) {
       countrytravellingto,
       firstname,
       lastname,
-      dateofbirth: new Date(dateofbirth),
+      dateofbirth,
       nationality,
       gender,
       martialstatus,
       passportnumber,
       confirmpassportnumber,
-      passportissuedate: new Date(passportissuedate),
+      passportissuedate,
       passportissueplace,
-      passportexpirydate: new Date(passportexpirydate),
+      passportexpirydate,
       visatype,
       email,
       phone,
@@ -42,14 +40,15 @@ export default async function handler(req, res) {
       other,
     });
 
-    console.log(user)
+    console.log("This is the userin PAI page"+user)
     let log = await user.save()
-    // await user.save();
+    await user.save();
     console.log("This is the log++++++++++++++++++++++++++++++++"+log)
 
-    res.status(201).json({ message: 'User registered successfully' });
+    return new Response(JSON.stringify(user), {status: 201})
   } catch (error) {
     console.log(error.message)
+    return new Response("Failed to create a new prompt",{status: 500})
     // res.status(500).json({ message: 'Internal server error: ' + error.message });
   }
 }
