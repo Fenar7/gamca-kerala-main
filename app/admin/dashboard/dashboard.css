@@ -1,0 +1,44 @@
+.dashboard-container-main .heading h1 {
+  color: #1166EA;
+  text-align: center;
+  font-family: inherit;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btnn {
+  display: flex;
+  padding: 1rem 1.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.4375rem;
+  background: #1166EA;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .btnn {
+    font-size: 1rem;
+    padding: 0.8rem 1.425rem;
+  }
+}
+@media (max-width: 768px) {
+  .btnn {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.325rem;
+  }
+}
+.btnn:hover {
+  background: #fff;
+  color: #1166EA;
+} /*# sourceMappingURL=dashboard.css.map */

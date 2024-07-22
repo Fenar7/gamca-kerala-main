@@ -1,8 +1,10 @@
 "use client";
 import './register.css';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 function Page() {
+    const router = useRouter()
     const [formData, setFormData] = useState({
         country: '',
         city: '',
@@ -24,6 +26,7 @@ function Page() {
         nationalid: '',
         postappliedfor: '',
         other: '',
+        paymentstatus: false,
     });
 
     const handleChange = (e) => {
@@ -67,7 +70,9 @@ function Page() {
         });
     
         if (response.ok) {
-          console.log('User registered successfully');
+          console.log('User registered successfully#######');
+        //   router.push('/register/payment')
+          
         } else {
           console.error('Failed to register user'+response);
         }

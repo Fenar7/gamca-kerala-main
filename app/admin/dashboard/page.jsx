@@ -1,4 +1,5 @@
 "use client";
+import './dashboard.css'
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -20,9 +21,16 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div>
-      <h1>Admin Dashboard</h1>
-      <button onClick={handleLogout}>Logout</button>
-    </div>
+    <>
+      <section className="dashboard-container-main container">
+        <div className="heading d-flex  align-items-center justify-content-between text-center margin-top margin-bottom">
+          <h1>Admin Dashboard</h1>
+          <button onClick={handleLogout} className="btnn mt-3">Logout</button>
+        </div>
+        <div className="data-container-main container">
+          <p>All entries (latest first)</p>
+        </div>
+      </section>
+    </>
   );
 }
