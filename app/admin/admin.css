@@ -1,0 +1,42 @@
+.admin-login-container h1 {
+  color: #1166EA;
+  text-align: center;
+  font-family: inherit;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.admin-login-container button {
+  display: flex;
+  width: 27.625rem;
+  padding: 1rem 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: #1166EA;
+  border: none;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.admin-login-container form {
+  gap: 1em;
+}
+.admin-login-container form .mg-top {
+  margin-top: 3em !important;
+}
+.admin-login-container form .mg-bottom {
+  margin-bottom: 3em !important;
+}
+.admin-login-container form .row-main {
+  width: 100%;
+}
+.admin-login-container form .row-main .custom-select-wrapper .custom-select-container input {
+  width: 100%;
+}/*# sourceMappingURL=admin.css.map */

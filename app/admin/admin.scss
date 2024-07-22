@@ -1,0 +1,51 @@
+.admin-login-container{
+    h1{
+        color: #1166EA;
+        text-align: center;
+        font-family: inherit;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    button{
+        display: flex;
+        width: 27.625rem;
+        padding: 1rem 1.2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 0.625rem;
+background: #1166EA;
+border: none;
+
+        color: #FFF;
+        font-family: inherit;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    form{
+        gap: 1em;
+        .mg-top{
+            margin-top: 3em!important;
+        }
+        .mg-bottom{
+            margin-bottom: 3em!important;
+        }
+        .row-main{
+            width: 100%;
+            .custom-select-wrapper{
+                .custom-select-container{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
