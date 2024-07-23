@@ -95,10 +95,17 @@ function Page() {
             },
             body: JSON.stringify({userData,response}),
           });
+
+          let clearcookie = await fetch('/api/clear-cookie',{
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          });
         },
         prefill: {
-          name: 'Your Name',
-          email: 'youremail@example.com',
+          name: userData.name,
+          email: userData.email,
           contact: '9999999999',
         },
         notes: {
