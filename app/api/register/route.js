@@ -52,6 +52,7 @@ export default async function handler(req, res) {
     cookies().set('passportno', passportnumber)
     cookies().set('amount', 1300)
     console.log("This is the log++++++++++++++++++++++++++++++++"+log)
+    // console.log('These are all cookies'+JSON.stringify(cookies().getAll()))
 
     return new Response(JSON.stringify(user), {status: 201})
   } catch (error) {

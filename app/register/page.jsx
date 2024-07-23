@@ -71,8 +71,10 @@ function Page() {
     
         if (response.ok) {
           console.log('User registered successfully#######');
-        //   router.push('/register/payment')
+          router.push('/register/payment')
+
           
+        console.log("This is the cookie response"+response)
         } else {
           console.error('Failed to register user'+response);
         }

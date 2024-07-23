@@ -1,38 +1,8 @@
-"use client";
+import { useState } from 'react';
 
-import { useEffect, useState } from "react";
-
-function Page() {
-  const [userData, setUserData] = useState({
-    name: '',
-    email: '',
-    passportno: '',
-    amount: '',
-    id:'',
-  });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/userdetails', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        });
-        const data = await response.json();
-        setUserData(data);
-      } catch (error) {
-        console.error('Error fetching user details:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+function RazorpayCheckout({ amount }) {
   const [loading, setLoading] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
-  let amount = userData.amount
 
   const loadScript = (src) => {
     return new Promise((resolve) => {
@@ -82,19 +52,11 @@ function Page() {
         description: 'payment',
         image: '/your_logo.png',
         order_id: data.id,
-        handler: async function (response) {
+        handler: function (response) {
           alert(`Payment ID: ${response.razorpay_payment_id}`);
           alert(`Order ID: ${response.razorpay_order_id}`);
           alert(`Signature: ${response.razorpay_signature}`);
           setPaymentSuccess(true);
-          console.log('payment success for '+userData.id.replace(/^"|"$/g, ''))
-          let paymentresponse = await fetch('/api/set-status', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({userData,response}),
-          });
         },
         prefill: {
           name: 'Your Name',
@@ -119,14 +81,7 @@ function Page() {
   };
 
   return (
-    <>
-      <h1>Payment Confirmation</h1>
-      <h5>Name: {userData.name}</h5>
-      <h5>Email: {userData.email}</h5>
-      <h5>Passport no: {userData.passportno}</h5>
-      <h5>Amount: {userData.amount}</h5>
-      <h5>ID: {userData.id}</h5>
-      <div>
+    <div>
       {!paymentSuccess ? (
         <button onClick={handlePayment} disabled={loading}>
           {loading ? 'Processing...' : 'Pay Now'}
@@ -135,8 +90,7 @@ function Page() {
         <h3>Payment Success</h3>
       )}
     </div>
-    </>
   );
 }
 
-export default Page;
+export default RazorpayCheckout;
