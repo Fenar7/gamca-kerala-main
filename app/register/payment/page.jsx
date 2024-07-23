@@ -83,9 +83,9 @@ function Page() {
         image: '/your_logo.png',
         order_id: data.id,
         handler: async function (response) {
-          alert(`Payment ID: ${response.razorpay_payment_id}`);
-          alert(`Order ID: ${response.razorpay_order_id}`);
-          alert(`Signature: ${response.razorpay_signature}`);
+          // alert(`Payment ID: ${response.razorpay_payment_id}`);
+          // alert(`Order ID: ${response.razorpay_order_id}`);
+          // alert(`Signature: ${response.razorpay_signature}`);
           setPaymentSuccess(true);
           console.log('payment success for '+userData.id.replace(/^"|"$/g, ''))
           let paymentresponse = await fetch('/api/set-status', {
