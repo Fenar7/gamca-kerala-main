@@ -46,7 +46,7 @@ export default function AdminDashboard() {
           <button onClick={handleLogout} className="btnn mt-3">Logout</button>
         </div>
         <div className="data-container-main container">
-          <p>All entries (latest first)</p>
+          <p className="subhead">All entries (latest first)</p>
           {users.length > 0 ? (
             users.map((user) => (
               <div key={user._id} className="user-card d-flex">

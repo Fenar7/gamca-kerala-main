@@ -1,3 +1,66 @@
 .payment-container-main {
   height: 70vh;
+}
+.payment-container-main .payment-container {
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 1rem;
+  padding: 3em 2em;
+  gap: 0.4em;
+}
+.payment-container-main .payment-container h1 {
+  color: #1B2B50;
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0.6em !important;
+}
+@media (max-width: 990px) {
+  .payment-container-main .payment-container h1 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .payment-container-main .payment-container h1 {
+    font-size: 1.6rem;
+  }
+}
+.payment-container-main .payment-container h5 {
+  color: rgb(83, 83, 83);
+}
+.payment-container-main .payment-container button {
+  display: flex;
+  padding: 1rem 1.525rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.4375rem;
+  background: #1166EA;
+  margin-top: 1em;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 900px) {
+  .payment-container-main .payment-container button {
+    font-size: 1rem;
+    padding: 0.8rem 1.425rem;
+  }
+}
+@media (max-width: 768px) {
+  .payment-container-main .payment-container button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.325rem;
+  }
+}
+.payment-container-main .payment-container button:hover {
+  background: #fff;
+  color: #1166EA;
 }/*# sourceMappingURL=payment.css.map */

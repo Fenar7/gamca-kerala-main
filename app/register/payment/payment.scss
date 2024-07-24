@@ -1,6 +1,79 @@
+$blue-main: #1166EA;
+$dark-blue: #1B2B50;
+$icon-grey: #D9D9D9;
+$grey-text: #9498A6;
+$white: #fff;
+$light-grey-text: #909090;
+$dark-grey-text: #555;
+
+
+
 .payment-container-main{
     height: 70vh;
     .payment-container{
-        
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 1rem;
+        padding: 3em 2em;
+        gap: 0.4em;
+            h1{
+                color: #1B2B50;
+                text-align: center;
+                font-family: inherit;
+                font-size: 2.1875rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 0.6em!important;
+
+                @media(max-width:990px){
+                    font-size: 1.9rem;
+                }
+
+                @media(max-width:768px){
+                    font-size: 1.6rem;
+                }
+            }
+
+            h5{
+                color: rgb(83, 83, 83);
+                
+            }
+
+            button{
+                display: flex;
+                padding: 1rem 1.525rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.625rem;
+                border-radius: 0.4375rem;
+                background: $blue-main;
+                margin-top: 1em;
+
+                border: none;
+
+                color: $white;
+                font-family: inherit;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                transition: all .3s ease-in-out;
+
+                @media(max-width: 900px){
+                    font-size: 1rem;
+                    padding: 0.8rem 1.425rem;
+                }
+
+                @media(max-width: 768px){
+                    font-size: 0.9rem;
+                    padding: 0.8rem 1.325rem;
+                }
+            }
+
+            button:hover{
+                background: $white;
+                color: $blue-main;
+            }
     }
 }

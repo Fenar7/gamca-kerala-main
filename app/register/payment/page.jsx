@@ -135,7 +135,6 @@ function Page() {
           <h5>Email: {userData.email}</h5>
           <h5>Passport no: {userData.passportno}</h5>
           <h5>Amount: {userData.amount}</h5>
-          <h5>ID: {userData.id}</h5>
           <div>
           {!paymentSuccess ? (
             <button onClick={handlePayment} disabled={loading}>
