@@ -11,6 +11,17 @@
             line-height: normal;
         }
     }
+
+    .data-container-main{
+      .user-card{
+        gap: 1em!important;
+        flex-wrap: wrap;
+        margin-bottom: 3em;
+        background-color: #9FBDED;
+        border-radius: 2em;
+        padding: 2em 2em;
+      }
+    }
 }
 
 .btnn {

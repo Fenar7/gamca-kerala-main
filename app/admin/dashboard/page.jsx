@@ -1,5 +1,5 @@
 "use client";
-import './dashboard.css'
+import './dashboard.css';
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -27,7 +27,7 @@ export default function AdminDashboard() {
         throw new Error('Failed to fetch data');
       }
       const data = await response.json();
-      setUsers(data);
+      setUsers(data.reverse()); // Reverse the order of users
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -49,7 +49,7 @@ export default function AdminDashboard() {
           <p>All entries (latest first)</p>
           {users.length > 0 ? (
             users.map((user) => (
-              <div key={user._id} className="user-card">
+              <div key={user._id} className="user-card d-flex">
                 <p><strong>First Name:</strong> {user.firstname}</p>
                 <p><strong>Last Name:</strong> {user.lastname}</p>
                 <p><strong>Country:</strong> {user.country}</p>
