@@ -1,4 +1,5 @@
 "use client";
+import './payment.css'
 
 import { useEffect, useState } from "react";
 
@@ -127,21 +128,25 @@ function Page() {
 
   return (
     <>
-      <h1>Payment Confirmation</h1>
-      <h5>Name: {userData.name}</h5>
-      <h5>Email: {userData.email}</h5>
-      <h5>Passport no: {userData.passportno}</h5>
-      <h5>Amount: {userData.amount}</h5>
-      <h5>ID: {userData.id}</h5>
-      <div>
-      {!paymentSuccess ? (
-        <button onClick={handlePayment} disabled={loading}>
-          {loading ? 'Processing...' : 'Pay Now'}
-        </button>
-      ) : (
-        <h3>Payment Success</h3>
-      )}
-    </div>
+      <div className="payment-container-main container d-flex align-items-center justify-content-center flex-column">
+          <div className="payment-container d-flex flex-column align-items-center justify-content-center">
+          <h1>Payment Confirmation</h1>
+          <h5>Name: {userData.name}</h5>
+          <h5>Email: {userData.email}</h5>
+          <h5>Passport no: {userData.passportno}</h5>
+          <h5>Amount: {userData.amount}</h5>
+          <h5>ID: {userData.id}</h5>
+          <div>
+          {!paymentSuccess ? (
+            <button onClick={handlePayment} disabled={loading}>
+              {loading ? 'Processing...' : 'Pay Now'}
+            </button>
+          ) : (
+            <h3>Payment Success</h3>
+          )}
+        </div>
+          </div>
+      </div>
     </>
   );
 }

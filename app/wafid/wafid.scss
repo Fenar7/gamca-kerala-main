@@ -1,0 +1,181 @@
+
+$blue-main: #1166EA;
+$dark-blue: #1B2B50;
+$icon-grey: #D9D9D9;
+$grey-text: #9498A6;
+$white: #fff;
+$light-grey-text: #909090;
+$dark-grey-text: #555;
+
+
+.hero-container-main{
+    height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/centre-hero-img.png');
+    @media(max-width:768px){
+        height: unset;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+    .hero-container{
+        height: 100%;
+        gap: 1.1em;
+
+        h1{
+            color: #fff;
+            text-align: center;
+            font-family: inherit;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @media(max-width:1101px){
+                font-size: 2.3rem;
+            }
+
+            @media(max-width:768px){
+                font-size: 1.8rem;
+            }
+            
+        }
+
+        a{
+            color: #fff!important;
+            font-family: inherit;
+            font-size: 1.0625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        span{
+            color: #fff!important;
+            font-family: inherit;
+            font-size: 1.0625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+.medical-center-cards-container-main{
+    .medical-center-cards-container{
+        h2{
+                color: $dark-blue;
+                text-align: center;
+                font-family: inherit;
+                font-size: 2.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 1.5em!important;
+    
+                @media(max-width:990px){
+                    font-size: 2.5rem;
+                    margin-bottom: 1em!important;
+                }
+    
+                @media(max-width:768px){
+                    font-size: 2rem;
+                    margin-bottom: .5em!important;
+                }
+        }
+
+        .cards-container{
+            flex-wrap: wrap;
+            row-gap: 1.8em;
+            @media(max-width:768px){
+                justify-content: center!important;
+            }
+            .cardd{
+                width: 20%;
+                    min-width: 22.4em!important;
+                    height: 7.8em;
+                    display: flex;
+                    padding: 1.6875rem;
+                    border-radius: 0.9375rem;
+                    background: #FFF;
+                    box-shadow: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.45);
+                    text-align: left!important;
+    
+                    h4{
+                        color: $dark-blue;
+                        font-family: inherit;
+                        font-size: 1.375rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-align: center!important;
+                    }
+    
+                    p{
+                        color: #555;
+                        font-family: inherit;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 135.6%; /* 1.356rem */
+                        text-align: left!important;
+                    }
+            }
+        }
+    }
+}
+
+.information-section-container-main{
+    .information-section-container{
+        h3{
+            color: $dark-blue;
+                text-align: center;
+                font-family: inherit;
+                font-size: 2.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 1.5em!important;
+    
+                @media(max-width:990px){
+                    font-size: 2.5rem;
+                    margin-bottom: 1em!important;
+                }
+    
+                @media(max-width:768px){
+                    font-size: 2rem;
+                    margin-bottom: .5em!important;
+                }
+        }
+
+        .para-info{
+            h4{
+                color: #1B2B50;
+                font-family: inherit;
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 0.5em!important;
+
+                @media(max-width:768px){
+                    margin-bottom: 0.3em!important;
+                }
+            }
+        }
+    }
+}
+
+p{
+    color: #555;
+    font-family: inherit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135.6%; /* 1.356rem */
+    margin-bottom: 1.5em;
+
+    @media(max-width:768px){
+        font-size: 0.8rem;
+    }
+}

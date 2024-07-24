@@ -7,6 +7,16 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 990px) {
+  .faq-container-main .heading h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .faq-container-main .heading h1 {
+    font-size: 2rem;
+  }
+}
 .faq-container-main .heading p {
   color: #9498A6;
   text-align: center;
