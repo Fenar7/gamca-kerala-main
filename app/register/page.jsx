@@ -131,7 +131,7 @@ function Page() {
                             </div>
                         </div>
 
-                        <h3 className="grp-heading">Candidate's information</h3>
+                        <h3 className="grp-heading">Candidate&apos;s information</h3>
                         <div className="form-row">
                             <div className="form-group custom-select-wrapper">
                                 <label htmlFor="first_name">First Name</label>

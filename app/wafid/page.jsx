@@ -145,7 +145,7 @@ GMA Online Service provides the assistance of highly qualified consultants who c
     • Sultanate of Oman<br />
     • State of Qatar<br />
 
-To visit any of the above-mentioned gulf countries you need to get a Wafid appointment. It must be done at the medical centers designated by the Gulf Health Council, and each individual's medical fitness report is prepared by the authorized medical centers. After acquiring a positive Wafid medical report from an approved Wafid center, you can travel to your destination country.
+To visit any of the above-mentioned gulf countries you need to get a Wafid appointment. It must be done at the medical centers designated by the Gulf Health Council, and each individual&aposs medical fitness report is prepared by the authorized medical centers. After acquiring a positive Wafid medical report from an approved Wafid center, you can travel to your destination country.
 
 In India, there are many authorized Wafid medical centers in different cities. While doing the registration, choose the city nearby. You need to visit the center physically and get the medical tests done. GMA Online service is a reliable online service provider in India for Wafid medical appointment.
             </p>

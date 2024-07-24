@@ -30,7 +30,7 @@ function FAQ() {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              Deliveries for the "berad Shower" in India are scheduled to commence in May 2024. Reservations are currently being accepted online, allowing interested customers to secure their berad Shower ahead of time.
+              Deliveries for the berad Shower in India are scheduled to commence in May 2024. Reservations are currently being accepted online, allowing interested customers to secure their berad Shower ahead of time.
             </div>
           </div>
         </div>
