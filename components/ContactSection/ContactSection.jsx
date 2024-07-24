@@ -7,7 +7,7 @@ function ContactSection() {
         <div className="col-12 col-md-6 text-content d-flex flex-column justify-content-center">
           <h4>Hey There</h4>
           <h5>
-            We'd Love To Hear From<br /><span>You</span>
+            We&apos;d Love To Hear From<br /><span>You</span>
           </h5>
           <p>
           Have Some Doubts?<br />

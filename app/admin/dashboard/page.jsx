@@ -16,7 +16,7 @@ export default function AdminDashboard() {
     } else {
       fetchData();
     }
-  }, []);
+  }, [router]);
 
   const fetchData = async () => {
     try {

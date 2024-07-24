@@ -19,7 +19,7 @@ export default function AdminLogin() {
     if (isAuthenticated) {
       router.push('/admin/dashboard');
     }
-  }, []);
+  }, [router]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
