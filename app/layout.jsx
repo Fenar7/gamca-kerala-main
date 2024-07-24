@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import { Inter } from "next/font/google";
 import "./globals.css";
-import BootsrapClient from '@/components/bootsrapClient';
+import BootsrapClient from '@/components/BootsrapClient';
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 
