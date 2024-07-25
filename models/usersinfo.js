@@ -4,17 +4,14 @@ import mongoose from 'mongoose';
 const UserSchema = new mongoose.Schema({
   country: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   city: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   countrytravellingto: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   firstname: {
@@ -31,17 +28,14 @@ const UserSchema = new mongoose.Schema({
   },
   nationality: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   gender: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   martialstatus: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   passportnumber: {
@@ -66,7 +60,6 @@ const UserSchema = new mongoose.Schema({
   },
   visatype: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   email: {
@@ -83,7 +76,6 @@ const UserSchema = new mongoose.Schema({
   },
   postappliedfor: {
     type: String,
-    enum: ['2', '3', '4', '5'],
     required: true,
   },
   other: {

@@ -1,11 +1,20 @@
-import './button.css'
+"use client";
 
-function Button({text,link}) {
+import './button.css';
+import { useRouter } from 'next/navigation';
+
+function Button({ text }) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/register');
+  };
+
   return (
-    <>
-      <button class="btnn">{text}</button>
-    </>
-  )
+    <button className="btnn" onClick={handleClick}>
+      {text}
+    </button>
+  );
 }
 
-export default Button
+export default Button;

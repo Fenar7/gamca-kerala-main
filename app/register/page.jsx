@@ -3,8 +3,15 @@ import './register.css';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+const countryCityMapping = {
+    India: ['Ahmedabad', 'Bangalore', 'Calicut', 'Chennai','Cochin','Goa','Hyderabad','Jaipur','Kolkata','Kutch','Lucknow','Mangalore','Manjeri','Mumbai','New Delhi','Patna','Tirur','Trichy','Trivananthapuram'],
+    Indonesia: ['Jakarta Selatan', 'Malang', 'Matram', 'Surabaya'],
+    Nepal: ['Kathmandu'],
+    Srilanka: ['Colombo', 'Kurunegala']
+};
+
 function Page() {
-    const router = useRouter()
+    const router = useRouter();
     const [formData, setFormData] = useState({
         country: '',
         city: '',
@@ -32,52 +39,35 @@ function Page() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
-          ...prev,
-          [name]: value,
+            ...prev,
+            [name]: value,
         }));
-        console.log(formData)
     };
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     console.log('userobject-----'+formData)
-    //     const response = await fetch('/api/register', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify(formData),
-    //     });
-    
-    //     if (response.ok) {
-    //       console.log('User registered successfully');
-    //     } else {
-    //       console.error('Failed to register user'+response);
-    //     }
-    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('userobject-----'+formData)
         const response = await fetch('/api/register', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(
-            formData
-          ),
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
         });
-    
-        if (response.ok) {
-          console.log('User registered successfully#######');
-          router.push('/register/payment')
 
-          
-        console.log("This is the cookie response"+response)
+        if (response.ok) {
+            router.push('/register/payment');
         } else {
-          console.error('Failed to register user'+response);
+            console.error('Failed to register user', response);
         }
+    };
+
+    const getCityOptions = () => {
+        if (!formData.country) {
+            return <option value="" disabled>Select Your City</option>;
+        }
+        return countryCityMapping[formData.country].map((city) => (
+            <option key={city} value={city}>{city}</option>
+        ));
     };
 
     return (
@@ -93,10 +83,10 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="country" value={formData.country} onChange={handleChange} required>
                                         <option value="" disabled>Select Your Country</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>India</option>
+                                        <option>Indonesia</option>
+                                        <option>Nepal</option>
+                                        <option>Srilanka</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -106,11 +96,7 @@ function Page() {
                                 <label htmlFor="city">City</label>
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="city" value={formData.city} onChange={handleChange} required>
-                                        <option value="" disabled>Select Your City</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        {getCityOptions()}
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -121,10 +107,13 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="countrytravellingto" value={formData.countrytravellingto} onChange={handleChange} required>
                                         <option value="" disabled>Select GCC Country</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Bahrain</option>
+                                        <option>Kuwait</option>
+                                        <option>Oman</option>
+                                        <option>Qatar</option>
+                                        <option>Saudi Arabia</option>
+                                        <option>UAE</option>
+                                        <option>Yemen</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -161,10 +150,10 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="nationality" value={formData.nationality} onChange={handleChange} required>
                                         <option value="" disabled>Select Your Nationality</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Indian</option>
+                                        <option>Indonesian</option>
+                                        <option>Nepali</option>
+                                        <option>Srilankan</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -175,10 +164,8 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="gender" value={formData.gender} onChange={handleChange} required>
                                         <option value="" disabled>Select Gender</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -189,10 +176,8 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="martialstatus" value={formData.martialstatus} onChange={handleChange} required>
                                         <option value="" disabled>-------------</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Married</option>
+                                        <option>Single</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -242,10 +227,8 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="visatype" value={formData.visatype} onChange={handleChange} required>
                                         <option value="" disabled>Select Visa Type</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Work Visa</option>
+                                        <option>Family Visa</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>
@@ -281,10 +264,94 @@ function Page() {
                                 <div className="custom-select-container">
                                     <select className="form-control custom-select" name="postappliedfor" value={formData.postappliedfor} onChange={handleChange} required>
                                         <option value="" disabled>Select GCC Country</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Banking & Finance</option>
+                                        <option>Carpenter</option>
+                                        <option>Cashier</option>
+                                        <option>Electrician</option>
+                                        <option>Engineer</option>
+                                        <option>General Secretory</option>
+                                        <option>Health & Medicine & Nursing</option>
+                                        <option>Heavy Driver</option>
+                                        <option>IT & Internet Engineer</option>
+                                        <option>Leisure & Tourism</option>
+                                        <option>Light Driver</option>
+                                        <option>Mason</option>
+                                        <option>President</option>
+                                        <option>Labour</option>
+                                        <option>Labour</option>
+                                        <option>Plumber</option>
+                                        <option>Doctor</option>
+                                        <option>Family</option>
+                                        <option>Steel Fixer</option>
+                                        <option>Aluminum Technician</option>
+                                        <option>Nurse</option>
+                                        <option>Male Nurse</option>
+                                        <option>Ward Boy</option>
+                                        <option>Shovel Operator</option>
+                                        <option>Dozer Operator</option>
+                                        <option>Car Mechanic</option>
+                                        <option>Petrol Mechanic</option>
+                                        <option>Diesel Mechanic</option>
+                                        <option>Student</option>
+                                        <option>Accountant</option>
+                                        <option>Lab Technician</option>
+                                        <option>Drafts man</option>
+                                        <option>Auto-Cad Operator</option>
+                                        <option>Painter</option>
+                                        <option>Tailor</option>
+                                        <option>Welder</option>
+                                        <option>X-ray Technician</option>
+                                        <option>Lecturer</option>
+                                        <option>A.C Technician</option>
+                                        <option>Business</option>
+                                        <option>Cleaner</option>
+                                        <option>Security Guard</option>
+                                        <option>House Maid</option>
+                                        <option>Manager</option>
+                                        <option>Hospital Cleaning</option>
+                                        <option>Mechanic</option>
+                                        <option>Computer Operator</option>
+                                        <option>House Driver</option>
+                                        <option>Driver</option>
+                                        <option>Cleaning Labour</option>
+                                        <option>Building Electrician</option>
+                                        <option>Salesman</option>
+                                        <option>Plastermason</option>
+                                        <option>Servant</option>
+                                        <option>Barber</option>
+                                        <option>Residence</option>
+                                        <option>Shepherds</option>
+                                        <option>Employment</option>
+                                        <option>Fuel Filler</option>
+                                        <option>Worker</option>
+                                        <option>House Boy</option>
+                                        <option>House Wife</option>
+                                        <option>RCC Fitter</option>
+                                        <option>Clerk</option>
+                                        <option>Microbiologist</option>
+                                        <option>Teacher</option>
+                                        <option>Helper</option>
+                                        <option>Hajj Duty</option>
+                                        <option>Shuttering</option>
+                                        <option>Supervisor</option>
+                                        <option>Medical Specialist</option>
+                                        <option>Office Secretary</option>
+                                        <option>Technician</option>
+                                        <option>Butcher</option>
+                                        <option>Arabic Food Cook</option>
+                                        <option>Agricultural Worker</option>
+                                        <option>Service</option>
+                                        <option>Studio CAD Designer</option>
+                                        <option>Financial Analyst</option>
+                                        <option>Cabin Appearance (AIR LINES)</option>
+                                        <option>Car Washer</option>
+                                        <option>Surveyor</option>
+                                        <option>Electrical Technician</option>
+                                        <option>Waiter</option>
+                                        <option>Nursing helper</option>
+                                        <option>Anesthesia technician</option>
+                                        <option>Marvel</option>
+                                        <option>Construction worker</option>
                                     </select>
                                     <div className="custom-arrow"></div>
                                 </div>

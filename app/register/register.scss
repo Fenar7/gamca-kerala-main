@@ -1,5 +1,52 @@
+$blue-main: #1166EA;
+$dark-blue: #1B2B50;
+$icon-grey: #D9D9D9;
+$grey-text: #9498A6;
+$white: #fff;
+$light-grey-text: #909090;
+$dark-grey-text: #555;
+
+
 .form-container-main{
     .form-container{
+        button{
+            margin-top: 0.9em!important;
+            display: flex;
+    padding: 1rem 1.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.4375rem;
+    background: $blue-main;
+
+    border: none;
+
+    color: $white;
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    transition: all .3s ease-in-out;
+
+    @media(max-width: 900px){
+        font-size: 1rem;
+        padding: 0.8rem 1.425rem;
+        margin-top: 0.8em!important;
+    }
+
+    @media(max-width: 768px){
+        font-size: 0.9rem;
+        padding: 0.8rem 1.325rem;
+        margin-top: 0.5em!important;
+    }
+        }
+
+        button:hover{
+            background: $white;
+            color: $blue-main;
+        }
         h1{
             color: #1B2B50;
             font-family: inherit;

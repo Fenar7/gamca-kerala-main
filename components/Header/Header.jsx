@@ -72,13 +72,13 @@ function Header({phone, email}) {
                 GCC Countries
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/bahrain">Bahrain</a>
-                  <a className="dropdown-item" href="/kuwait">Kuwait</a>
-                  <a className="dropdown-item" href="/oman">Oman</a>
-                  <a className="dropdown-item" href="/qatar">Qatar</a>
-                  <a className="dropdown-item" href="saudiarabia">Saudi Arabia</a>
-                  <a className="dropdown-item" href="uae">UAE</a>
-                  <a className="dropdown-item" href="yemen">Yemen</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-bahrain">Bahrain</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-kuwait">Kuwait</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-oman">Oman</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-qatar">Qatar</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-saudiarabia">Saudi Arabia</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-uae">UAE</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-yemen">Yemen</a>
                 </div>
             </li>
 
@@ -87,25 +87,25 @@ function Header({phone, email}) {
                 Medical Centers
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/ahmedabad">Ahmedabad</a>
-                  <a className="dropdown-item" href="goa">Goa</a>
-                  <a className="dropdown-item" href="/hyderabad">Hyderabad</a>
-                  <a className="dropdown-item" href="/jaipur">Jaipur</a>
-                  <a className="dropdown-item" href="/kolkata">Kolkata</a>
-                  <a className="dropdown-item" href="/lucknow">Lucknow</a>
-                  <a className="dropdown-item" href="/mangalore">Mangalore</a>
-                  <a className="dropdown-item" href="/manjeri">Manjeri</a>
-                  <a className="dropdown-item" href="/mumbai">Mumbai</a>
-                  <a className="dropdown-item" href="/newdelhi">New Delhi</a>
-                  <a className="dropdown-item" href="/tirur">Tirur</a>
-                  <a className="dropdown-item" href="/trichy">Trichy</a>
-                  <a className="dropdown-item" href="/trivandrum">Trivandrum</a>
-                  <a className="dropdown-item" href="/patna">Patna</a>
-                  <a className="dropdown-item" href="/kutch">Kutch</a>
-                  <a className="dropdown-item" href="/banglore">Banglore</a>
-                  <a className="dropdown-item" href="/calicut">Calicut</a>
-                  <a className="dropdown-item" href="/chennai">Chennai</a>
-                  <a className="dropdown-item" href="/cochin">Cochin</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-ahmedabad">Ahmedabad</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-goa">Goa</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-hyderabad">Hyderabad</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-jaipur">Jaipur</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-kolkata">Kolkata</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-lucknow">Lucknow</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-mangalore">Mangalore</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-manjeri">Manjeri</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-mumbai">Mumbai</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-new-delhi">New Delhi</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-tirur">Tirur</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-trichy">Trichy</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-triuvananthapuram">Trivandrum</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-patna">Patna</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-bangalore">Kutch</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-bangalore">Banglore</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-calicut">Calicut</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-chennai">Chennai</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-cochin">Cochin</a>
                 </div>
             </li>
 
