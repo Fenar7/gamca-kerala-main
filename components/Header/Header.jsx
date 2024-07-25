@@ -137,26 +137,26 @@ function Header({phone, email}) {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home</a>
+            <a className="nav-link" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About us</a>
+            <a className="nav-link" href="/about">About us</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Fees</a>
+            <a className="nav-link" href="/fees">Fees</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               GCC Countries
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">Bahrain</a>
-              <a className="dropdown-item" href="#">Kuwait</a>
-              <a className="dropdown-item" href="#">Oman</a>
-              <a className="dropdown-item" href="#">Qatar</a>
-              <a className="dropdown-item" href="#">Saudi Arabia</a>
-              <a className="dropdown-item" href="#">UAE</a>
-              <a className="dropdown-item" href="#">Yemen</a>
+            <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-bahrain">Bahrain</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-kuwait">Kuwait</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-oman">Oman</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-qatar">Qatar</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-saudiarabia">Saudi Arabia</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-uae">UAE</a>
+                  <a className="dropdown-item" href="/gcccountries/gamca-medical-appointment-for-yemen">Yemen</a>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -165,37 +165,38 @@ function Header({phone, email}) {
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
             <a className="dropdown-item" href="/ahmedabad">Ahmedabad</a>
-                  <a className="dropdown-item" href="goa">Goa</a>
-                  <a className="dropdown-item" href="/hyderabad">Hyderabad</a>
-                  <a className="dropdown-item" href="/jaipur">Jaipur</a>
-                  <a className="dropdown-item" href="/kolkata">Kolkata</a>
-                  <a className="dropdown-item" href="/lucknow">Lucknow</a>
-                  <a className="dropdown-item" href="/mangalore">Mangalore</a>
-                  <a className="dropdown-item" href="/manjeri">Manjeri</a>
-                  <a className="dropdown-item" href="/mumbai">Mumbai</a>
-                  <a className="dropdown-item" href="/newdelhi">New Delhi</a>
-                  <a className="dropdown-item" href="/tirur">Tirur</a>
-                  <a className="dropdown-item" href="/trichy">Trichy</a>
-                  <a className="dropdown-item" href="/trivandrum">Trivandrum</a>
-                  <a className="dropdown-item" href="/patna">Patna</a>
-                  <a className="dropdown-item" href="/kutch">Kutch</a>
-                  <a className="dropdown-item" href="/banglore">Banglore</a>
-                  <a className="dropdown-item" href="/calicut">Calicut</a>
-                  <a className="dropdown-item" href="/chennai">Chennai</a>
-                  <a className="dropdown-item" href="/cochin">Cochin</a>
+            <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-ahmedabad">Ahmedabad</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-goa">Goa</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-hyderabad">Hyderabad</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-jaipur">Jaipur</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-kolkata">Kolkata</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-lucknow">Lucknow</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-mangalore">Mangalore</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-manjeri">Manjeri</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-mumbai">Mumbai</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-new-delhi">New Delhi</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-tirur">Tirur</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-trichy">Trichy</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-triuvananthapuram">Trivandrum</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-patna">Patna</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-bangalore">Kutch</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-bangalore">Banglore</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-calicut">Calicut</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-chennai">Chennai</a>
+                  <a className="dropdown-item" href="/medicalcenters/gamca-approved-medical-examination-centers-in-cochin">Cochin</a>
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">WAFID</a>
+            <a className="nav-link" href="/wafid">WAFID</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">FAQ</a>
+            <a className="nav-link" href="/faq">FAQ</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Terms & Conditions</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact Us</a>
+            <a className="nav-link" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
