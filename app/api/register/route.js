@@ -1,24 +1,45 @@
-// pages/api/register.js
-'use server'
-import { cookies } from 'next/headers'
-import {connectToDB} from '@/utils/database';
+'use server';
+import { cookies } from 'next/headers';
+import { connectToDB } from '@/utils/database';
 import User from '@/models/usersinfo';
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
-  }
-
+export async function POST(req) {
   try {
+    // Parse the request body
+    const body = await req.json();
     const {
-      country, city, countrytravellingto, firstname, lastname,
-      dateofbirth, nationality, gender, martialstatus, passportnumber, confirmpassportnumber,
-      passportissuedate, passportissueplace, passportexpirydate, visatype, email, phone,
-      nationalid, postappliedfor, other, paymentstatus
-    } = await req.json();
+      country,
+      city,
+      countrytravellingto,
+      firstname,
+      lastname,
+      dateofbirth,
+      nationality,
+      gender,
+      martialstatus,
+      passportnumber,
+      confirmpassportnumber,
+      passportissuedate,
+      passportissueplace,
+      passportexpirydate,
+      visatype,
+      email,
+      phone,
+      nationalid,
+      postappliedfor,
+      other,
+      paymentstatus,
+    } = body;
 
+    // Validate required fields
+    if (!city) {
+      return new Response(JSON.stringify({ error: 'City is required' }), { status: 400 });
+    }
+
+    // Connect to the database
     await connectToDB();
 
+    // Create a new user
     const user = new User({
       country,
       city,
@@ -43,23 +64,20 @@ export default async function handler(req, res) {
       paymentstatus,
     });
 
-    console.log("This is the userin PAI page"+user)
-    let log = await user.save()
+    // Save the user
     await user.save();
-    cookies().set('id', JSON.stringify(user._id))
-    cookies().set('firstname', firstname)
-    cookies().set('email', email)
-    cookies().set('passportno', passportnumber)
-    cookies().set('amount', 1300)
-    console.log("This is the log++++++++++++++++++++++++++++++++"+log)
-    // console.log('These are all cookies'+JSON.stringify(cookies().getAll()))
 
-    return new Response(JSON.stringify(user), {status: 201})
+    // Set cookies
+    cookies().set('id', JSON.stringify(user._id));
+    cookies().set('firstname', firstname);
+    cookies().set('email', email);
+    cookies().set('passportno', passportnumber);
+    cookies().set('amount', 1300);
+
+    // Return the response
+    return new Response(JSON.stringify(user), { status: 201 });
   } catch (error) {
-    console.log(error.message)
-    return new Response("Failed to create a new prompt",{status: 500})
-    // res.status(500).json({ message: 'Internal server error: ' + error.message });
+    console.error(error.message);
+    return new Response(JSON.stringify({ error: 'Internal server error' }), { status: 500 });
   }
 }
-
-export const POST = handler;
